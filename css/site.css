@@ -52,12 +52,6 @@ footer {
 
 .footer-info {    
     color: white;  
-    border-radius: 5px;       
-}
-
-.footer-info li {
-    list-style-type: none;
-    display: inline;
 }
 
 .footer-info a {
@@ -71,26 +65,26 @@ footer {
 
 .flex-list {
     position: relative;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 .flex-list ul {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: -1px;
+    flex-wrap: nowrap;
+    justify-content: center;
     padding: 0em;
 }
 
 .flex-list li {
-    flex-grow: 1;
-    flex-basis: auto;
-    margin: .25em 0;
     padding: 0 1em;
     text-align: center;
     border-left: 1px solid #FFF;    
+    align-items: center;
 }
+
+.flex-list li:nth-of-type(1) { border-left: 0px; }
 
 
 .assignments li {
