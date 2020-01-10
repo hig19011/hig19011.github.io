@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    margin: 0;    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0em;
+}
+
+
+.page-header {
+    background-color: blue;
+    display: flex;
+    width: 100%;
+    color: white;
+    height: 6em;
+    vertical-align: middle;    
+}
+.page-header h1 {
+    text-align: center;
+    margin: auto;
+    color: red;
+    font-size: 3em;
+}
+
+.header-profile-pic {
+    height: 10em;
+    margin-top: 2em;
+    margin-right: 2em;
+    z-index: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.content {
+    flex: 1 0 auto;
+    margin: .5em 1em;
+}
+
+.content hr {
+    margin-right: 5em; 
+    z-index: 5;
+}
+
+footer {
+    flex-shrink:0;
+    background-color: blue;    
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.footer-info {    
+    color: white;  
+    border-radius: 5px;       
+}
+
+.footer-info li {
+    list-style-type: none;
+    display: inline;
+}
+
+.footer-info a {
+    color: white;
+}
+
+.footer-updated {
+    color: yellow;
+    text-align: center;    
+}
+
+.flex-list {
+    position: relative;
+    overflow: hidden;
+}
+
+.flex-list ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -1px;
+    padding: 0em;
+}
+
+.flex-list li {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: .25em 0;
+    padding: 0 1em;
+    text-align: center;
+    border-left: 1px solid #FFF;    
+}
+
+
+.assignments li {
+    list-style-type: circle;
+}
