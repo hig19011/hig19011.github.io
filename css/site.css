@@ -11,24 +11,24 @@ body {
 
 
 .page-header {
-    background-color: blue;
+    background-color: #2F3442;
     display: flex;
     width: 100%;
-    color: white;
+    color: #DFDCC4;
     height: 6em;
     vertical-align: middle;    
 }
 .page-header h1 {
     text-align: center;
     margin: auto;
-    color: red;
-    font-size: 3em;
+    color: #DFDCC4;
+    font-size: 2em;
 }
 
 .header-profile-pic {
-    height: 250px;
-    margin-top: 2em;
-    margin-right: 2em;
+    height: 16em;
+    margin-top: 1em;
+    margin-right: 1em;
     z-index: 100;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
 }
@@ -39,27 +39,27 @@ body {
 }
 
 .content hr {
-    margin-right: 5em; 
+    
     z-index: 5;
 }
 
 footer {
     flex-shrink:0;
-    background-color: blue;    
+    background-color: #2F3442;    
     width: 100%;
     padding-bottom: 1em;
 }
 
 .footer-info {    
-    color: white;  
+    color: #DFDCC4;  
 }
 
 .footer-info a {
-    color: white;
+    color: #DFDCC4;
 }
 
 .footer-updated {
-    color: yellow;
+    color: #2EA8A9;
     text-align: center;    
 }
 
