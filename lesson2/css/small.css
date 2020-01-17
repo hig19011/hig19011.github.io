@@ -28,26 +28,11 @@ body {
     font-family: Barlow, Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
-.page-header h2 {
-    text-align: center;
-    margin: auto;
-    color: #DFDCC4;
-    font-size: 2em;
-    font-family: Barlow, Arial, Helvetica, sans-serif;
-    font-weight: 600;
-}
-
-.header-profile-pic {
-    height: 16em;
-    margin-top: 1em;
-    margin-right: 1em;
-    z-index: 100;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
-}
 
 .content {
     flex: 1 0 auto;
     margin: 16px;
+    width: auto;  
 }
 
 .content hr {
@@ -102,6 +87,61 @@ footer {
     border-left: 1px solid;
 }
 
-.assignments li {
-    list-style-type: circle;
+.principle-layout {
+    display: grid;
+    grid-template-columns: 1fr;    
+    
 }
+
+.principle-frame {
+    margin: 8px;
+    border-radius:5px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #F0F0F0;
+
+}
+
+
+.principle-title {
+    margin: -1px -1px 0 -1px;
+    border-radius: 5px 5px 0 0;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-bottom: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #39485D;
+    padding: 8px;
+    font-family: Barlow, Arial, Helvetica, sans-serif;
+}
+
+.principle-site-name {
+    margin: 8px;
+    font-size: 12px;
+}
+
+.principle-link {
+    margin: 8px;
+    font-size: 12px;
+}
+
+.principle-example {
+    border-width: 1px;
+    border-style: solid;
+    border-color: slategrey;
+    margin: 8px;
+}
+
+.principle-example img {
+    width: 100%;
+}
+
+.principle-explaination{
+    word-wrap: break-word;    
+    overflow:hidden;
+    margin: 8px;
+}
+
