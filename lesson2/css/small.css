@@ -1,6 +1,4 @@
-html, body {
-    height: 100%;
-    margin: 0;  
+html {
     font-family: Rubik, Arial, Helvetica, sans-serif;  
 }
 
@@ -10,23 +8,25 @@ body {
     padding: 0em;
 }
 
-
 .page-header {
     background-color: #2F3442;
     width: 100%;
     color: #DFDCC4;
     text-align: center;
     vertical-align: middle;
-    padding: 0 0 16px 0;
+    padding: 0 0 1px 0;
 }
 
 .page-header h1 {
     text-align: center;
     margin: auto;
     color: #DFDCC4;
-    font-size: 2em;
     font-family: Barlow, Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    padding: 8px 0 0 0;
+}
+
+.page-header h2 {
+    font-family: Barlow, Arial, Helvetica, sans-serif;
 }
 
 .content {
@@ -47,12 +47,8 @@ footer {
     padding-bottom: 1em;
 }
 
-.footer-info {    
+.footer-info, .footer-info a {    
     color: #DFDCC4;  
-}
-
-.footer-info a {
-    color: #DFDCC4;
 }
 
 .footer-updated {
@@ -101,7 +97,6 @@ footer {
     background-color: #F0F0F0;
 
 }
-
 
 .principle-title {
     margin: -1px -1px 0 -1px;
