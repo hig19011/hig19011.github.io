@@ -113,12 +113,7 @@ footer {
     font-family: Barlow, Arial, Helvetica, sans-serif;
 }
 
-.principle-site-name {
-    margin: 8px;
-    font-size: 12px;
-}
-
-.principle-link {
+.principle-site-name, .principle-link {
     margin: 8px;
     font-size: 12px;
 }
