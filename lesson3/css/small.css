@@ -1,7 +1,9 @@
 html, body {
     height: 100%;
     margin: 0;  
-    font-family: Rubik, Arial, Helvetica, sans-serif;  
+    font-family: Roboto, sans-serif;
+    font-size: 400; 
+    background-color: #cad2c5;
 }
 
 body {
@@ -11,20 +13,19 @@ body {
 }
 
 .page-header {
-    background-color: #2F3442;
+    background-color: #2f3e46;
     width: 100%;
     display: flex;
-    color: #DFDCC4;
+    color: #cad2c5;
     height: 7em; 
     padding: 0 0 16px 0;             
 }
 
 .page-header h1 {   
     margin: auto auto auto 30px;
-    color: #DFDCC4;
+    color: #cad2c5;
     font-size: 2em;
-    font-family: Barlow, Arial, Helvetica, sans-serif;
-    font-weight: 600;       
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;     
 }
 
 .content {
@@ -32,28 +33,27 @@ body {
     margin: 16px;
 }
 
-.content hr {
-    
-    z-index: 5;
+h1, h2, h3 {
+    color: #354f52;    
 }
 
 footer {
     flex-shrink:0;
-    background-color: #2F3442;    
+    background-color: #2f3e46;    
     width: 100%;
     padding-bottom: 1em;
 }
 
 .footer-info {    
-    color: #DFDCC4;  
+    color: #cad2c5;  
 }
 
 .footer-info a {
-    color: #DFDCC4;
+    color: #cad2c5;
 }
 
 .footer-updated {
-    color: #2EA8A9;
+    color: #84a98c;
     text-align: center;    
 }
 
@@ -89,7 +89,7 @@ footer {
 }
 
 nav {
-	background-color: #36454f;
+	background-color: #354f52;
 	text-align: center;
 	box-shadow: 0 2px 15px gray;
 }
@@ -107,19 +107,19 @@ nav ul li { flex: 1 1 100%; }
 
 nav li a {
 	display: block;
-	color: #fff;
+	color: #cad2c5;
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
 	font-size: 0.95rem;
 }
 nav a:hover {
-	background-color: #bbb;
-	color: #36454f;
+	background-color: #84a98c;
+	color: #2f3e46;
 }
 
 .selected { 
-    background-color: #2EA8A9; 
+    background-color: #52796f; 
 }
 
 
@@ -129,3 +129,13 @@ article img {
     margin: 0px 24px 0px 0px;
 }
 
+article a {
+    word-wrap: break-word;
+}
+
+.header-sample {
+    margin: auto;
+    font-size: 2em;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
