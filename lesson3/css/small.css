@@ -139,3 +139,7 @@ article a {
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
+.label{
+    font-weight: bold;
+}
