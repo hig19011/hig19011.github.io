@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+    margin: 0;  
+    font-family: Rubik, Arial, Helvetica, sans-serif;  
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0em;
+}
+
+.page-header {
+    background-color: #2F3442;
+    width: 100%;
+    display: flex;
+    color: #DFDCC4;
+    height: 7em; 
+    padding: 0 0 16px 0;             
+}
+
+.page-header h1 {   
+    margin: auto auto auto 30px;
+    color: #DFDCC4;
+    font-size: 2em;
+    font-family: Barlow, Arial, Helvetica, sans-serif;
+    font-weight: 600;       
+}
+
+.content {
+    flex: 1 0 auto;
+    margin: 16px;
+}
+
+.content hr {
+    
+    z-index: 5;
+}
+
+footer {
+    flex-shrink:0;
+    background-color: #2F3442;    
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.footer-info {    
+    color: #DFDCC4;  
+}
+
+.footer-info a {
+    color: #DFDCC4;
+}
+
+.footer-updated {
+    color: #2EA8A9;
+    text-align: center;    
+}
+
+.flex-list {
+    position: relative;
+    margin: 1em;
+    overflow: hidden; 
+    display: table;  
+    margin: 0 auto; 
+}
+
+.flex-list ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -1px;
+    padding-left: 0;
+}
+
+.flex-list li {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: .25em 0;
+    padding: 0 1em;
+    text-align: center;
+    border-left: 1px solid;
+}
+
+.assignments li {
+    list-style-type: circle;
+}
+
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+nav ul li { flex: 1 1 100%; }
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+
+.selected { 
+    background-color: #2EA8A9; 
+}
+
+
+article img {
+    max-width:100%; 
+    height:auto;
+    margin: 0px 24px 0px 0px;
+}
+
