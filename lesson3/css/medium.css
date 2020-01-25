@@ -13,7 +13,10 @@
 
     .content {
         flex: 1 0 auto;
-        margin: 24px;
+        margin: auto;
+        max-width: 960px;
+        padding: 24px;
+        
     }
 
     nav ul li { flex: 1 1 auto; }

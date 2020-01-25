@@ -30,7 +30,7 @@ body {
 
 .content {
     flex: 1 0 auto;
-    margin: 16px;
+    padding: 16px;
 }
 
 h1, h2, h3 {
