@@ -52,7 +52,7 @@ footer {
 }
 
 .footer-updated {
-    color: #84a98c;
+    color: #cad2c5;
     text-align: center;    
 }
 
@@ -113,19 +113,18 @@ nav li a {
 	font-size: 0.95rem;
 }
 nav a:hover {
-	background-color: #52796f;
-	color: #cad2c5;
+	background-color: #84a98c;
+	color: #2f3e46;
 }
 
 nav li.selected a { 
-    background-color: #84a98c; 
-    color: #2f3e46;
+    background-color: #52796f; 
+    color: #cad2c5;
 }
 
 section img {
     max-width:100%; 
     height:auto;
-    margin: 0px 24px 0px 0px;
 }
 
 section a {
