@@ -121,14 +121,13 @@ nav a:hover {
     background-color: #52796f; 
 }
 
-
-article img {
+section img {
     max-width:100%; 
     height:auto;
     margin: 0px 24px 0px 0px;
 }
 
-article a {
+section a {
     word-wrap: break-word;
 }
 
