@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">    
+    <title>Weather Site Pla - Preston</title>
+    <meta name="description" content="Weather Site information for the town of Preston">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu%7cRoboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">    
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header class="page-header">     
+      <a href="index.html"><img src="images/logo.png" alt="Drawing of sun partially covered by clouds"></a> 
+      <h1>Weather Streak</h1>                  
+      <div>Weather Trends, Old and New</div>
+    </header>
+    <nav>
+      <button style="display:hide" onclick="toggleMenu()">&#9776 Menu</button>
+      <ul id="primaryNav">        
+        <li><a href="#">Home</a></li>
+        <li class="selected"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ulid="primaryNav">
+    </nav>
+    <main class="content">
+      <section>
+        <h2>Site Name</h2>
+        <p>We selected Weather Streak as the name because the target audience is interested in how long the current condition will have existed.</p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-info">
+        <div class="flex-list">
+          <ul>
+            <li>&copy;<span> Weather Streak</span></li>
+            <li>Attributions</li>
+            <li>Gene Higgins</li>                        
+          </ul>
+        </div>            
+      </div>
+      <div class="footer-updated"><span id="currentDate"></span></div>   
+
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+  </html>
