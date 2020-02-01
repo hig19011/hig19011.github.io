@@ -17,10 +17,7 @@
     }
 
     footer {
-        flex-shrink: 0;
         align-self: center;
-        background-color: #2f3e46;
         width: 51em;
-        padding-bottom: 1em;
     }
 }
