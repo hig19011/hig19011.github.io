@@ -1,0 +1,168 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #cad2c5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+}
+
+.page-header {
+  background-color: #2f3e46;
+  width: 100%; 
+  color: #cad2c5;
+  height: 6em;
+  padding: 0 0 4px 0;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+.page-header div {
+  display: inline-block;
+  margin: 2rem auto auto auto;
+  vertical-align: top;
+}
+
+.page-header h1 {
+  margin: auto auto auto auto;
+  color: #cad2c5;
+  font-size: 2em;  
+}
+
+.page-header p {
+  margin: auto;
+  padding-left: 1rem;
+}
+
+.page-header img {
+  height: 100%; 
+  padding-right: 2rem;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding: 16px 0 16px 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #2f3e46;
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: #2f3e46;
+  padding-bottom: 1em;
+}
+
+.footer-info {
+  color: #cad2c5;
+}
+
+.footer-info a {
+  color: #cad2c5;
+}
+
+.footer-updated {
+  color: #cad2c5;
+  text-align: center;
+}
+
+.flex-list {
+  position: relative;
+  margin: 1em;
+  overflow: hidden;
+  display: table;
+  margin: 0 auto;
+}
+
+.flex-list ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -1px;
+  padding-left: 0;
+}
+
+.flex-list li {
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: .25em 0;
+  padding: 0 1em;
+  text-align: center;
+  border-left: 1px solid;
+}
+
+
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border:none;
+  font-size: 1.6rem;
+  color: #fff;
+  display: inline;
+}
+
+nav {
+  background-color: #354f52;
+  box-shadow: 0 2px 15px gray;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+nav ul li {
+  flex: 1 1 100%;
+}
+
+nav li a {
+  display: block;
+  color: #cad2c5;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  background-color: #84a98c;
+  color: #2f3e46;
+}
+
+nav li.selected a {
+  background-color: #52796f;
+  color: #f6f8f5;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.content > div {
+  padding: 30px;
+  margin: 1rem 0;
+  border: #2f3e46 solid 1px;
+  background-color: #84a98c;
+}
+
+.content h2 {
+  text-align: center;
+}

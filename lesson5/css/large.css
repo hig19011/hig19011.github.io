@@ -1,0 +1,23 @@
+@media only screen and (min-width: 54em) {
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 0 auto;
+    }
+
+    .content {
+        width: 51em;
+    }
+
+    footer {
+        align-self: center;
+        width: 51em;
+    }
+}

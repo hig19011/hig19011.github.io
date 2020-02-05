@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">    
+    <title>Weather Streak - Preston</title>
+    <meta name="description" content="Weather Streak information for the town of Preston including weather summary, five day forecast, articles and contact information.">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu%7cRoboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">    
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header class="page-header">     
+      <a href="#"><img src="images/logo.png" alt="Drawing of sun partially covered by clouds"></a> 
+      <div>
+        <h1>Weather Streak</h1>                  
+        <p>Weather Trends, Old and New</p>
+      </div>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul class="hide" id="primaryNav">        
+        <li><a href="#">Home</a></li>
+        <li class="selected"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <h2>Preston Idaho</h2>
+      <div>
+        Weather Summary
+      </div>
+      <div>
+        5 day forecast
+      </div>
+      <div>
+        Article 
+      </div>
+      <div>
+        Contact Info
+      </div>      
+    </main>
+    <footer>
+      <div class="footer-info">
+        <div class="flex-list">
+          <ul>
+            <li>&copy;<span> Weather Streak</span></li>
+            <li>Attributions</li>
+            <li>Gene Higgins</li>                        
+          </ul>
+        </div>            
+      </div>
+      <div class="footer-updated"><span id="currentDate"></span></div>   
+
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+  </html>
