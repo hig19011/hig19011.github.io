@@ -20,4 +20,15 @@
         align-self: center;
         width: 51em;
     }
+
+    
+    .hero {
+        margin: 4px auto 1rem auto;
+    }
+
+    .forecast_layout {
+        max-width: 30rem;
+        margin: 8px auto;
+    }
+
 }

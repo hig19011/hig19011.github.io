@@ -14,4 +14,63 @@
         width: 30em;
     }
 
+    .hero {
+        margin:4px auto 2rem auto;
+    }
+
+    .summary {
+        padding: 16px 24px;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        background-color: #2f3e46;
+        color: #84a98c;
+        box-shadow: 0 2px 30px #333; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+
+      .forecast {  
+        display: block;
+        margin: 4px auto;
+        border: 1px solid #2f3e46;
+        background-color: #84a98c;  
+        width: 90%;  
+      }
+      
+      .forecast h3 {
+        text-align: center;
+      }
+      
+      .forecast_layout {
+        display: flex;
+        flex-direction: row;
+        margin: 8px;  
+        justify-content: center;
+      }
+      
+      .cell {
+        flex: 1 1 100%;
+        margin: 8px 0px;  
+        border-left: 1px solid #2f3e46;
+        border-top: 1px solid #2f3e46;
+        border-bottom: 1px solid #2f3e46;
+      }
+      .cell:last-child{
+        border-right: 1px solid #2f3e46;
+      }
+      
+      .day {
+        margin: 0 auto;
+        background-color: #2f3e46;
+        color: #84a98c;
+        text-align: center;
+      }
+      
+      .temp {
+        text-align: center;
+      }
+      
+
 }
