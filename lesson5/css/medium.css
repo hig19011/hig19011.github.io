@@ -15,14 +15,14 @@
     }
 
     .hero {
-        margin:4px auto 2rem auto;
+        margin: 1em auto 2em auto;
     }
 
     .summary {
         padding: 16px 24px;
         position: absolute;
-        top: 2rem;
-        left: 2rem;
+        top: 2em;
+        left: 2em;
         background-color: #2f3e46;
         color: #84a98c;
         box-shadow: 0 2px 30px #333; 
@@ -33,10 +33,10 @@
 
       .forecast {  
         display: block;
-        margin: 4px auto;
+        margin: 1em auto;
         border: 1px solid #2f3e46;
-        background-color: #84a98c;  
-        width: 90%;  
+        background-color: #84a98c;         
+        padding: 8px;
       }
       
       .forecast h3 {
@@ -71,6 +71,14 @@
       .temp {
         text-align: center;
       }
-      
 
+      .feature_article{
+        margin: auto;
+        padding: 12px;
+      }   
+
+      .contact_info {
+        border: #2f3e46 solid 1px;
+      }
+      
 }

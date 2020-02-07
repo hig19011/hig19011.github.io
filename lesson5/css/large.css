@@ -13,7 +13,7 @@
     }
 
     .content {
-        width: 51em;
+        width: 51em;        
     }
 
     footer {
@@ -23,12 +23,36 @@
 
     
     .hero {
-        margin: 4px auto 1rem auto;
+        margin: 2em auto 1em auto;
+    }
+    
+    .forecast{
+        margin: 2em auto;
     }
 
     .forecast_layout {
-        max-width: 30rem;
+        max-width: 30em;
         margin: 8px auto;
+    }
+
+    .feature_article{ 
+        margin: 2em auto;       
+        padding: 16px;
+    }
+
+    .feature_article article {    
+        display: inline-block;    
+        width: 48%;
+    }
+
+    .feature_article img{        
+        float:right;
+        max-width: 50%;
+        border: 1px solid black;      
+    }
+
+    .contact_info {
+        margin: 2em auto 0 auto;
     }
 
 }
