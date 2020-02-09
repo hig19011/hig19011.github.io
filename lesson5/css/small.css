@@ -244,7 +244,7 @@ nav li.selected a {
   margin-bottom: 4px;
 }
 
-.feature_article h5 {
+.feature_article h4 {
   margin-left: 16px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -276,11 +276,12 @@ nav li.selected a {
 }
 
 .contact_info h4 {
-  margin: 4px 0
+  margin: 4px 0;
+  font-size: medium;
 }
 
 .contact_info p {
-  margin: 4px 0
+  margin: 4px 0;
 }
 
 .contact_info .communication {
