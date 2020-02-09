@@ -227,6 +227,7 @@ nav li.selected a {
   grid-column: 1/2;
   text-align: right;
   margin-right: 4px;
+  color: #fff;
 }
 
 .summary_value {
