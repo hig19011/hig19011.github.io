@@ -2,7 +2,7 @@ let now = new Date();
 let longDate = now.toLocaleDateString('en-us', {weekday: 'long'}) + ", " + now.toLocaleDateString('en-us', { day:'numeric'}) + " " + now.toLocaleDateString('en-us', {month:'long'}) + " " + now.toLocaleDateString('en-us', {year:'numeric'});
 document.getElementById("currentDate").innerHTML = longDate;
 
-if(now.getDay() == 6)
+if(now.getDay() == 5)  //Show if Friday
 {
   var announcements = document.getElementsByClassName("announcement");
   var announcement = announcements[0];

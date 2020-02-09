@@ -165,7 +165,7 @@ nav li a {
   font-size: 0.95em;
 }
 
-nav a:hover {
+nav a:hover, nav li.selected a:hover {
   background-color: #84a98c;
   color: #2f3e46;
 }
@@ -174,6 +174,8 @@ nav li.selected a {
   background-color: #52796f;
   color: #f6f8f5;
 }
+
+
 
 .hide {
   display: none;
@@ -259,26 +261,17 @@ nav li.selected a {
   max-height:100%;
 }
 
-.contact_info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 1em 0 0 0;
-  
+.contact_info { 
   background-color: #84a98c;
-  margin: 2em auto 0 auto;  
+  margin: 2em auto 0 auto;
+  padding: 1em 2em;  
 }
 
-.contact_info .map{  
-  max-width: 305px;
-  margin: 8px auto ;
-}
 
-.contact_info div{
-  margin: 4px 8px;
-  flex: 1 0 30%;
-  justify-content: center;
+.contact_info > div{   
   font-size: small;  
+  margin: 0 5% 0 25%;
+  width: 70%;
 }
 
 .contact_info h4 {
@@ -291,10 +284,19 @@ nav li.selected a {
 
 .contact_info .communication {
   margin-top: 18px;
+  margin-bottom: 18px;
 }
 
-.map img {
-  display: block;
-  margin: 0;
-  padding: 0;
+.location_img {
+  max-width: 1em;
+  max-height: 1em;
+}
+
+.social_logo {
+  max-width: 1.5em;
+  max-height: 1.5em;  
+}
+
+.map {
+  display: none;
 }

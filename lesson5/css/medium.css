@@ -1,15 +1,7 @@
 @media only screen and (min-width: 32.5em) {
 
-    .page-header {     
-        
-    }
-
-    .page-header h1 {        
+    .page-header h1 {
         font-size: 2.5em;
-    }
-
-    .announcement {
-
     }
 
     .header_title {
@@ -33,60 +25,85 @@
         left: 2em;
         background-color: #2f3e46;
         color: #84a98c;
-        box-shadow: 0 2px 30px #333; 
+        box-shadow: 0 2px 30px #333;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-      }
+    }
 
-
-      .forecast {  
+    .forecast {
         display: block;
         margin: 1em auto;
         border: 1px solid #2f3e46;
-        background-color: #84a98c;         
+        background-color: #84a98c;
         padding: 8px;
-      }
-      
-      .forecast h3 {
+    }
+
+    .forecast img {
+        display: block;
+        margin: 1em auto;
+    }
+
+    .forecast h3 {
         text-align: center;
-      }
-      
-      .forecast_layout {
+    }
+
+    .forecast_layout {
         display: flex;
         flex-direction: row;
-        margin: 8px;  
+        margin: 8px;
         justify-content: center;
-      }
-      
-      .cell {
+    }
+
+    .cell {
         flex: 1 1 100%;
-        margin: 8px 0px;  
+        margin: 8px 0px;
         border-left: 1px solid #2f3e46;
         border-top: 1px solid #2f3e46;
         border-bottom: 1px solid #2f3e46;
-      }
-      .cell:last-child{
+    }
+
+    .cell:last-child {
         border-right: 1px solid #2f3e46;
-      }
-      
-      .day {
+    }
+
+    .day {
         margin: 0 auto;
         background-color: #2f3e46;
         color: #84a98c;
         text-align: center;
-      }
-      
-      .temp {
-        text-align: center;
-      }
+    }
 
-      .feature_article{
+    .temp {
+        text-align: center;
+    }
+
+    .feature_article {
         margin: auto;
         padding: 12px;
-      }   
+    }
 
-      .contact_info {
+    .contact_info {       
         border: #2f3e46 solid 1px;
-      }
-      
+    }
+    
+    .contact_info .communication {
+        margin-top: 18px;        
+    }
+
+    .contact_info .map {
+        max-width: 305px;
+        margin: 8px auto;
+    }
+
+    .map{
+        display:block
+    }
+
+    .map img {
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+    }
+
 }
