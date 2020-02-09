@@ -12,9 +12,6 @@ body {
   padding: 0em;
 }
 
-
-
-
 .page-header {
   background-color: #2f3e46;
   width: 100%; 
@@ -27,26 +24,26 @@ body {
   height: 6em;
 }
 
-.page-header div {
+.header_title div {
   display: inline-block;
   margin: 2em auto auto auto;
   vertical-align: top;
 }
 
-.page-header h1 {
+.header_title h1 {
   margin: auto auto auto auto;
   color: #cad2c5;
   font-size: 2em;  
 }
 
-.page-header p {
+.header_title p {
   margin: auto;
-  padding-left: 1em;
+  padding-left: 0;
 }
 
-.page-header img {
-  height: 100%; 
-  padding-right: 2em;
+.header_title img {
+  height: 90%; 
+  padding-right: 0;
 }
 
 .announcement {
@@ -173,12 +170,6 @@ nav li.selected a {
   color: #f6f8f5;
 }
 
-
-
-.hide {
-  display: none;
-}
-
 .hero {
   margin:4px 1em 4em 1em;
   position: relative;
@@ -298,5 +289,11 @@ nav li.selected a {
 }
 
 .map {
+  display: none;
+}
+
+
+
+.hide {
   display: none;
 }
