@@ -1,15 +1,23 @@
 @media only screen and (min-width: 32.5em) {
 
     .page-header {     
-        height: 7em;
+        
     }
 
     .page-header h1 {        
         font-size: 2.5em;
     }
 
+    .announcement {
+
+    }
+
+    .header_title {
+        height: 7em;
+    }
+
     .content {
-        padding: 24px;
+        margin: 16px 24px 24px 24px;
         align-self: center;
         width: 30em;
     }
