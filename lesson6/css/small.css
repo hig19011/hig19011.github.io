@@ -213,20 +213,20 @@ nav li.selected a {
   margin: 8px auto 8px 4px;
 }
 
-.summary span{
-  margin: 2px 8px;
-}
+
 
 .summary_label {
   grid-column: 1/2;
   text-align: right;
   margin-right: 4px;
   color: #fff;
+  margin: 2px 8px;
 }
 
 .summary_value {
   grid-column: 2/2;
   color: #cad2c5;
+  margin: 2px 8px;
 }
 
 .forecast {
