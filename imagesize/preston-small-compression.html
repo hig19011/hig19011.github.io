@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">    
+    <title>Weather Streak - Preston</title>
+    <meta name="description" content="Weather Streak information for the town of Preston including weather summary, five day forecast, articles and contact information.">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu%7cRoboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">    
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>   
+    <header class="page-header">     
+      <div class="announcement hide">
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9:00 a.m. Saturday at the city park.</p>
+      </div>
+      <section class="header_title">
+        <a href="#"><img src="images/logo.png" alt="Drawing of sun partially covered by clouds"></a> 
+        <div>
+          <h1>Weather Streak</h1>                  
+          <p>Weather Trends, Old and New</p>
+        </div>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul class="hide" id="primaryNav">        
+        <li><a href="#">Home</a></li>
+        <li class="selected"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <h2>Preston Idaho</h2>
+      <div class="hero">
+        <div class="hero_image">
+          <img src="images/preston_idaho_farming.jpg" alt="farm in preston idaho with fresh growth and hills in the background">
+        </div>
+        <section class="summary">
+          <h3>Weather Summary</h3>          
+          <span class="summary_label">Currently:</span>
+          <span class="summary_value">Sunny</span>     
+          <span class="summary_label">Temperature:</span>
+          <span class="summary_value">76 &#176;F</span>
+          <span class="summary_label">Humidity:</span>
+          <span class="summary_value">69%</span>
+          <span class="summary_label">Precipitation:</span>
+          <span class="summary_value">0 inches</span>
+          <span class="summary_label">Wind Speed:</span>
+          <span class="summary_value">5 mph</span>
+        </section>
+      </div>
+      <div class="forecast">
+        <h3>Five Day Forecast</h3>
+        <div class="forecast_layout">
+          <div class="cell">
+            <p class="day">Mon</p>
+            <img src="images/sunny.png" alt="sunny forecast">
+            <p class="temp">45&#176;/21&#176;</p>
+          </div>
+          <div class="cell">
+            <p class="day">Tue</p>
+            <img src="images/sunny.png" alt="sunny forecast">
+            <p class="temp">47&#176;/23&#176;</p>
+          </div>
+          <div class="cell">
+            <p class="day">Wed</p>
+            <img src="images/sunny.png" alt="sunny forecast">
+            <p class="temp">46&#176;/25&#176;</p>
+          </div>
+          <div class="cell">
+            <p class="day">Thr</p>
+            <img src="images/sunny.png" alt="sunny forecast">
+            <p class="temp">57&#176;/31&#176;</p>
+          </div>
+          <div class="cell">
+            <p class="day">Fri</p>
+            <img src="images/sunny.png" alt="sunny forecast">
+            <p class="temp">35&#176;/13&#176;</p>
+          </div>        
+        </div>
+      </div>
+      <div class="feature_article">
+        <h3>Windy snowstorm expected to make roads dangerous</h3>
+        <h4>By Necia P. Seamons</h4>
+        <div>          
+          <p>The Idaho Transportation Department (ITD) and the National Weather Service (NWS) are advising the traveling public to use caution while in transit due to an extended severe winter weather advisory beginning this evening Wed., Feb. 5.</p>
+          <p>Drivers can expect high winds, blowing and drifting snow, low visibilty and heavy snow in higher elevations. Up to five inches of snow in the valley and nine inches in the mountains is expected over the next 24 hours, in Franklin County, the eastern part of Oneida County and north throughout the Snake River Plain. <a href="#">... continue to full article</a></p>          
+        </div>
+        <div style="text-align: center;"><img src="images/snowyroad-shrink.jpg" alt="Freezing roads with snow coverer farm in the background." width="391" height="304">        </div>
+      </div>
+      <div class="contact_info">
+        <div class="address">
+          <h4>Weather Streak</h4>
+          
+          <div>
+            <span><img class="location_img" src="images/location.png" alt="location symbol"/>30 N 1st E</span>
+            <p>Preston, ID 83263</p>
+          </div>
+        </div>
+        <div class="communication">
+          <p>&#9742; 208-555-1873</p>
+          <p>&#9993; ContactUs@WeatherStreak.com</p>   
+          <div>
+            <a href="https://www.facebook.com" target="_blank"><img class="social_logo" src="images/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.pinterest.com" target="_blank"><img class="social_logo" src="images/pinterest.png" alt="pinterest logo"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="social_logo" src="images/twitter.png" alt="twitter logo"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img class="social_logo" src="images/whatsapp.png" alt="whatsapp logo"></a>
+          </div>       
+        </div>
+        
+        <div class="map"> 
+          <img src="images/preston_map.PNG" alt="Road map of Preston Idaho and surrounding area.">
+        </div>
+      </div>      
+    </main>
+    <footer>
+      <div class="footer-info">
+        <div class="flex-list">
+          <ul>
+            <li>&copy;<span> Weather Streak</span></li>
+            <li>Attributions</li>
+            <li>Gene Higgins</li>                        
+          </ul>
+        </div>            
+      </div>
+      <div class="footer-updated"><span id="currentDate"></span></div>   
+
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+  </html>
