@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">    
     <title>Weather Streak - Preston</title>
-    <meta name="description" content="Weather Streak information for the town of Preston including weather summary, five day forecast, articles and contact information.">
+    <meta name="description" content="Weather Streak information for the town of Preston including weather summary, five day forecast, articles and contact information.">    
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">    
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+
   </head>
   <body>   
     <header class="page-header">     
@@ -53,9 +54,9 @@
           <span class="summary_label">Currently:</span>
           <span class="summary_value">Sunny</span>     
           <span class="summary_label">Temperature:</span>
-          <div class="summary_value"><span id="temp">76</span><span> &#176;F</span></div>
+          <div class="summary_value"><span id="temp">49</span><span> &#176;F</span></div>
           <span class="summary_label">Wind Chill:</span>
-          <div class="summary_value"><span id="windChill"></span><span> &#176;F</span></div>
+          <div class="summary_value"><span id="windChill"></span><span id="windChillSymbol"> &#176;F</span></div>
           <span class="summary_label">Humidity:</span>
           <span class="summary_value">69%</span>
           <span class="summary_label">Precipitation:</span>
@@ -140,9 +141,10 @@
       </div>
       <div class="footer-updated"><span id="currentDate"></span></div>   
 
-    </footer>
+    </footer>    
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/webfontload.js"></script>
+    <script src="js/windchill.js"></script>  
   </body>
   </html>
