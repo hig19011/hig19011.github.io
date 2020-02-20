@@ -1,0 +1,27 @@
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  margin-bottom: 50px;
+}
+
+img {
+  display: block;  
+  margin-bottom: 50px;
+  box-shadow: 0 3px 30px #333;
+}
+
+
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
