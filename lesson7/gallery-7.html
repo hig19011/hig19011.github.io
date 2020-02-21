@@ -7,18 +7,91 @@
     <title>Weather Gallery</title>
     <meta name="description" content="Gallery of weather images from southern Idaho">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>    
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/lazyloading.css">
+    <link rel="stylesheet" href="css/normalize.css">   
+    <link rel="stylesheet" href="css/gallery.css">
   </head>
   <body>
-    <h1>Not Available Yet</h1>
-    <!-- <img src="images/placeholder.jpg" data-src="images/clouds1.jpg" alt="sample image">
-    <img src="images/placeholder.jpg" data-src="images/clouds2.jpg" alt="sample image">
-    <img src="images/placeholder.jpg" data-src="images/clouds3.jpg" alt="sample image">
-    <img src="images/placeholder.jpg" data-src="images/clouds4.jpg" alt="sample image">
-    <img src="images/placeholder.jpg" data-src="images/clouds5.jpg" alt="sample image">
-    <img src="images/placeholder.jpg" data-src="images/clouds6.jpg" alt="sample image"> -->
+    <header class="page-header">     
+      <div class="announcement hide">
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9:00 a.m. Saturday at the city park.</p>
+      </div>
+      <section class="header_title">
+        <a href="#"><img src="images/logo.png" alt="Drawing of sun partially covered by clouds"></a> 
+        <div>
+          <h1>Weather Streak</h1>                  
+          <p>Weather Trends, Old and New</p>
+        </div>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul class="hide" id="primaryNav">        
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-7.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li class="selected"><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <h2>Weather Gallery</h2>
+      <div class="gallery">
+        <article>
+          <img src="images/placeholder.jpg" data-src="images/clouds1.jpg" alt="Massive lighting strike">
+          <span>Brilliant lightning strike</span>
+        </article>
+        <article>
+          <img src="images/placeholder.jpg" data-src="images/clouds2.jpg" alt="haboob behind residential housing">
+          <span>Incoming haboob</span>
+        </article>
+        <article>
+          <img src="images/placeholder.jpg" data-src="images/clouds3.jpg" alt="Tornado on dry plains">
+          <span>Tornado on the plains</span>
+        </article>
+        <article>
+          <img src="images/placeholder.jpg" data-src="images/clouds4.jpg" alt="Lightning strike right next to a tornado at night">
+          <span>Lightning with a tornado</span>
+        </article>
+        <article>
+          <img src="images/placeholder.jpg" data-src="images/clouds5.jpg" alt="Rainbow under clouds in a partially cloudy sky">
+          <span>Rainbow to brighten the day</span>
+        </article>
+        <article>
+          <img src="images/placeholder.jpg" data-src="images/clouds6.jpg" alt="Storm clouds gathers over a shore line">
+          <span>Storm front at the lake</span>
+        </article>
+        <article>
+          <img src="images/placeholder.jpg" data-src="images/clouds7.jpg" alt="Lightning strick behind a farm house at dusk">
+          <span>Lighting at dusk</span>
+        </article>
+        <article>
+          <img src="images/placeholder.jpg" data-src="images/clouds8.jpg" alt="Storm front over a farm house and dry wheat field">
+          <span>Storm front over wheat field</span>
+        </article>
+        <article>
+          <img src="images/placeholder.jpg" data-src="images/clouds9.jpg" alt="Super cell building up over farm land">
+          <span>Super cell building up</span>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-info">
+        <div class="flex-list">
+          <ul>
+            <li>&copy;<span> Weather Streak</span></li>
+            <li>Attributions</li>
+            <li>Gene Higgins</li>                        
+          </ul>
+        </div>            
+      </div>
+      <div class="footer-updated"><span id="currentDate"></span></div>   
 
+    </footer> 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/webfontload.js"></script>
     <script src="js/lazyloading.js"></script>
   </body>
 </html>
