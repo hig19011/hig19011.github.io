@@ -8,7 +8,7 @@ main {
   align-self: center;
 }
 
-main > div  {
+article > div  {
   display: inline-block;
   box-shadow: 8px 8px 10px  #628ca6;
   width:auto;
