@@ -2,7 +2,6 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
   background-color: white;
 }
 
@@ -19,15 +18,8 @@ main {
   align-self: center;
 }
 
-
-
-
-.hide {
-  display: none;
-}
-
 main > div  {
-  box-shadow: 5px 5px 10px #628ca6;
+  box-shadow: 8px 8px 10px  #628ca6;
 }
 
 table {
