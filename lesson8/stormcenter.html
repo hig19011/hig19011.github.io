@@ -36,37 +36,20 @@
     </nav>
     <main class="content">
        <h2>Storm Center</h2>
-       <form>
+       <form method="get" action="stormreport-thankyou.html">
         <h3>Make a Storm Report</h3>
         <fieldset>
           <legend>Contact Information</legend> 
-          <label class="top">
-            <div>Full Name*</div>
-            <input type="text" name="fullname" required pattern="[a-zA-Z ]{5,}">
-          </label>
-          <label class="top">
-            <div>Email</div>
-            <input type="email" name="email" placeholder="stormy@stormwatcher.com">
-          </label>
-          <label class="top">
-            <div>Phone Number*</div>
-            <input type="tel" name="phone" required>
-          </label>
-          <label class="top">
-            <div>Zip Code*</div>
-            <input type="number" name="zipcode" required>
-          </label>
+          <label class="top">Full Name* <input type="text" name="fullname" required pattern="[a-zA-Z ]{5,}" autofocus></label>
+          <label class="top">Email<input type="email" name="email" placeholder="stormy@stormwatcher.com"></label>
+          <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+          <label class="top">Zip Code*<input type="number" name="zipcode" required></label>
         </fieldset>
         <fieldset>
           <legend>Storm Details</legend>        
-          <label class="top">
-            <div>Storm Date</div>
-            <input type="date" name="reportedon">
-          </label>
-          <label class="top">
-            <div>Storm Type</div>
-            <input list="stormtype" name="stormtype">
-            <datalist id="stormtype" >
+          <label class="top">Storm Date<input type="date" name="reportedon"></label>
+          <label class="top">Storm Type<input list="stormtype" name="stormtype">
+            <datalist id="stormtype">
               <option value="Flash Flood">
               <option value="Hail">
               <option value="Hurricane">
@@ -74,10 +57,9 @@
               <option value="Tornado">
             </datalist>
           </label>
-          <label class="top">
-            <div>Storm Severity</div>
-            <input type="range" min="1" max="10" step="1" list="tickmarks" value="5" onchange="adjustSeverity(this.value)" oninput="adjustSeverity(this.value)" class="range_text">
-            <div id="stormSeverity" class="range_text">5</div>          
+          <label class="top"><span>Storm Severity</span>
+            <input type="range" name="stormseverity" min="1" max="10" step="1" list="tickmarks" value="5" onchange="adjustSeverity(this.value)" oninput="adjustSeverity(this.value)" class="range_text">
+            <span id="stormSeverityNumber" class="range_text">5</span>          
             <datalist id="tickmarks">           
               <option value="1">
               <option value="2">
@@ -91,10 +73,9 @@
               <option value="10">
             </datalist>
           </label>
-          <label class="top">
-            <div>Storm Region</div>
-            <select name="reportedon" >            
-              <option selected disabled>Select Region...</option>
+          <label class="top">Storm Region
+            <select name="stormregion" >            
+              <option selected disabled>Select Region ...</option>
               <option value="Preston">Preston</option>
               <option value="Soda Springs">Soda Springs</option>
               <option value="Fish Haven">Fish Haven</option>
@@ -106,13 +87,11 @@
           <label class="side"><input type="radio" name="dangerlevel" value="yes">Yes</label>
           <label class="side"><input type="radio" name="dangerlevel" value="maybe">Maybe</label>
           <label class="side"><input type="radio" name="dangerlevel" value="no">No</label>
-          <label class="top">
-            <div>Additional Information:</div>
-            <textarea name="additionalInfo"></textarea>
+          <label class="top">Additional Information<textarea name="additionalInfo"></textarea>
           </label>
         </fieldset>
         <div>
-          <input type="submit" name="submit" value="Create Your Storm Report" class="submit_button">
+          <input type="submit" value="Create Your Storm Report" class="submit_button">
         </div>
       </form>
     </main>

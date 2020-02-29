@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">    
+    <title>Weather Streak - Preston</title>
+    <meta name="description" content="Weather Streak information for the town of Preston including weather summary, five day forecast, articles and contact information.">    
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">    
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>   
+    <header class="page-header">          
+      <section class="header_title">
+        <a href="#"><img src="images/logo.png" alt="Drawing of sun partially covered by clouds"></a> 
+        <div>
+          <h1>Weather Streak</h1>                  
+          <p>Weather Trends, Old and New</p>
+        </div>        
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul class="hide" id="primaryNav">        
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-8.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="selected"><a href="#">Storm Center</a></li>
+        <li><a href="gallery-8.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <h2>Storm Center</h2>
+      <section>
+        <h3>Your storm report was submitted.</h3>
+        <p>We appreciate your contribution to this site and the community who uses it.</p>
+        <p>You may be contact for additional information.</p>         
+      </section>
+    </main>
+    <footer>
+      <div class="footer-info">
+        <div class="flex-list">
+          <ul>
+            <li>&copy;<span> Weather Streak</span></li>
+            <li>Attributions</li>
+            <li>Gene Higgins</li>                        
+          </ul>
+        </div>            
+      </div>
+      <div class="footer-updated"><span id="currentDate"></span></div>   
+
+    </footer>    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/stormcenter.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+  </html>

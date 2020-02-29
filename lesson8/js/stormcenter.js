@@ -1,3 +1,3 @@
 function adjustSeverity(severity) {
-  document.getElementById("stormSeverity").textContent = severity;
+  document.getElementById("stormSeverityNumber").textContent = severity;
 }

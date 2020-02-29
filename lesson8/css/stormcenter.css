@@ -1,16 +1,17 @@
-
-
 form h3 {
   margin-left: 2em;
+  margin-top: 3em;
+  margin-bottom: 1em;
 }
 
-form fieldset{
+form fieldset {
 
-  margin: 2em;
+  margin: 32px;
   border: 1px solid #2f3e46;
   border-radius: 8px;
-  padding: 1em;
+  padding: 16px;
 }
+
 
 form legend {
   color: #2f3e46;
@@ -18,37 +19,59 @@ form legend {
   padding: 0 .4em;
 }
 
+form fieldset:focus-within {
+  border-width: 2px;
+  margin: 31px;
+}
+
+form fieldset:focus-within legend {
+  color: #354f52;
+  font-weight: 600;
+}
+
+form label.top:focus-within {
+  color: rgb(107, 63, 26);
+  font-weight: 600;
+}
+
 form label.top {
   display: block;
   padding-top: 1em;
   color: #354f52;
-  font-size: .95em;
+  font-size: .85em;
 }
 
-form label.top input, 
-form label.top select,  
+form label.top span {
+  display: block;
+}
+
+form label.top input,
+form label.top select,
 form label.top textarea {
   display: block;
   font-size: 1em;
-  border:1px solid #2f3e46;
+  border: 1px solid #2f3e46;
   border-radius: 4px;
   padding: 1em;
-  width: 85%;
+  width: 90%;
   max-width: 20em;
 }
 
-form label.top input {
-  display: inline;
+form label.top .range_text {
+  display: inline-block;
+  padding: 0.2em 0 0 0;
+  vertical-align: middle;
+  color: #354f52;
 }
 
-form label.top .range_text {
-  display: inline;
+form label.top span.range_text  {
+  font-size: x-large;
   padding: 0;
-  vertical-align: middle;
+  margin-left: 12px;
 }
 
 form label.side {
-  display:block;
+  display: block;
   color: #354f52;
   padding: .75em 0;
 }
@@ -59,7 +82,7 @@ form label.side input {
 
 form input.submit_button {
   background-color: #52796f;
-  color: #cad2c5;
+  color: #FFF;
   padding: 1em;
   margin: 0 0 2em 3em;
 }
@@ -75,9 +98,10 @@ form label.top input:required:valid {
 
 @media only screen and (min-width: 54em) {
 
-  form label.top input{
+  form label.top input {
     padding: .4em;
   }
+
   form label.side {
     padding: .4em 0;
   }
