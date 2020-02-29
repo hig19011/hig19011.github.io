@@ -1,0 +1,85 @@
+
+
+form h3 {
+  margin-left: 2em;
+}
+
+form fieldset{
+
+  margin: 2em;
+  border: 1px solid #2f3e46;
+  border-radius: 8px;
+  padding: 1em;
+}
+
+form legend {
+  color: #2f3e46;
+  margin: 0 1em;
+  padding: 0 .4em;
+}
+
+form label.top {
+  display: block;
+  padding-top: 1em;
+  color: #354f52;
+  font-size: .95em;
+}
+
+form label.top input, 
+form label.top select,  
+form label.top textarea {
+  display: block;
+  font-size: 1em;
+  border:1px solid #2f3e46;
+  border-radius: 4px;
+  padding: 1em;
+  width: 85%;
+  max-width: 20em;
+}
+
+form label.top input {
+  display: inline;
+}
+
+form label.top .range_text {
+  display: inline;
+  padding: 0;
+  vertical-align: middle;
+}
+
+form label.side {
+  display:block;
+  color: #354f52;
+  padding: .75em 0;
+}
+
+form label.side input {
+  margin-right: .5em;
+}
+
+form input.submit_button {
+  background-color: #52796f;
+  color: #cad2c5;
+  padding: 1em;
+  margin: 0 0 2em 3em;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+
+@media only screen and (min-width: 54em) {
+
+  form label.top input{
+    padding: .4em;
+  }
+  form label.side {
+    padding: .4em 0;
+  }
+
+}
