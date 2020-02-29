@@ -5,11 +5,11 @@ form h3 {
 }
 
 form fieldset {
-  margin: 16px;
+  margin: 24px;
   border: 1px solid #2f3e46;
  
   padding: 16px;
-  box-shadow: 4px 6px 10px gray;
+  box-shadow: 4px 8px 10px gray;
 }
 
 
@@ -22,7 +22,7 @@ form legend {
 
 form fieldset:focus-within {
   border-color: black;
-  box-shadow: 6px 8px 15px rgb(85, 85, 85);
+  box-shadow: 6px 10px 15px rgb(85, 85, 85);
 }
 
 form fieldset:focus-within legend {
