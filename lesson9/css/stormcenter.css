@@ -1,0 +1,160 @@
+form h3 {
+  margin-left: 2em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+form fieldset {
+  margin: 24px;
+  border: 1px solid #2f3e46;
+ 
+  padding: 16px;
+  box-shadow: 4px 8px 10px gray;
+}
+
+
+form legend {
+  color: #2f3e46;
+  background-color: #cad2c5;
+  margin: 0 1em;
+  padding: 0 .4em;
+}
+
+form fieldset:focus-within {
+  border-color: black;
+  box-shadow: 6px 10px 15px rgb(85, 85, 85);
+}
+
+form fieldset:focus-within legend {
+  color: #354f52;
+  font-weight: 600;
+}
+
+form label.top:focus-within {
+  color: rgb(107, 63, 26);
+  font-weight: 600;
+}
+
+form label.top {
+  display: block;
+  padding-top: 1em;
+  color: #354f52;
+  font-size: .85em;  
+}
+
+form label.top span {
+  display: block;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  display: block;
+  font-size: 1em;
+  border: 1px solid #2f3e46;
+  border-radius: 4px;
+  padding: 1em;
+  width: 90%;
+  max-width: 20em;
+  margin-top: 1px;
+}
+
+form label.top textarea {
+  resize: none;
+  height: 5em;
+}
+
+form label.top .range_text {
+  display: inline-block;
+  padding: 0.2em 0 0 0;
+  vertical-align: middle;
+  color: #354f52;
+}
+
+form label.top input.range_text {
+  width:80%;
+}
+
+form label.top span.range_text  {
+  font-size: x-large;
+  padding: 0;
+  margin-left: 8px;
+}
+
+form label.side {
+  display: block;
+  color: #354f52;
+  padding: .75em 0;
+}
+
+form label.side input {
+  margin-right: .5em;
+}
+
+form input.submit_button {
+  background-color: #52796f;
+  color: #FFF;
+  padding: 1em;
+  margin: 0 0 2em 3em;
+}
+
+
+
+form label.top input:required {
+  border: red solid 1px;
+}
+
+form label.top input:required:valid {
+  border: black solid 1px;
+}
+
+section.thankyou {
+    margin: 32px 24px;
+}
+
+
+@media only screen and (min-width: 32.5em) {
+
+  section.thankyou {
+    margin: 32px 0;
+  }
+
+}
+
+@media only screen and (min-width: 54em) {
+
+  form {
+    text-align: center;
+    width: 100%;
+    max-width: 20em;
+    margin: 0 auto;
+  }
+
+  form h3 {
+    margin: 3em auto 1em auto;    
+  }
+
+  form fieldset{
+    text-align: left;   
+  }
+
+  
+  form label.top input,
+  form label.top select {
+    padding: .4em;
+  }
+
+  form label.side {
+    padding: .4em 0;
+  }
+
+  form input.submit_button {    
+    padding: 1em;
+    margin: 0 auto;
+  }
+  
+
+  section.thankyou {
+    margin: 32px 24px;
+  }
+}
