@@ -34,7 +34,7 @@
     
 
     .forecast_layout {
-        max-width: 30em;
+        width: 30em;
         margin: 8px auto;
     }
 
@@ -67,6 +67,8 @@
         border: #2f3e46 solid 1px;
         background-color: #84a98c;
         margin: 2em auto 0 auto;
+        width: 47em;
+        max-width: 51em;
     }
 
     .contact_info div {

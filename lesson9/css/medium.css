@@ -18,6 +18,7 @@
     .hero {
         margin: 1em auto 2em auto;
         max-width: none;
+        align-self: stretch;
     }
 
     .summary {
@@ -33,11 +34,13 @@
     }
 
     .forecast {
-        display: block;
+        display: inline-block;
         margin: 1em auto;
-        border: 1px solid #2f3e46;
-        background-color: #84a98c;
+        
+        background-color: #cad2c5;
         padding: 8px;
+        box-shadow: 0px 0px 20px -3px #00000044;
+        align-self: center;
     }
 
     .forecast img {
@@ -52,6 +55,7 @@
     }
 
     .forecast_layout {
+        background-color: #84a98c;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -67,21 +71,20 @@
 
     .cell {        
         display: inline-block;
-        flex: 1;
-        margin: 8px 0px;
-        border-left: 1px solid #cad2c5;
-        border-top: 1px solid #cad2c5;
-        border-bottom: 1px solid #cad2c5;
+        flex: 1;        
+        border-left: 1px solid #2f3e46;
+        border-top: 1px solid #2f3e46;
+        border-bottom: 1px solid #2f3e46;
     }
 
     .cell:last-child {
-        border-right: 1px solid #cad2c5;
+        border-right: 1px solid #2f3e46;
     }
 
     .day {
         margin: 0 auto;
-        background-color: #cad2c5;
-        color: #2f3e46;
+        background-color: #2f3e46;
+        color: #cad2c5;
         text-align: center;
     }
 
@@ -97,6 +100,9 @@
 
     .contact_info {       
         border: #2f3e46 solid 1px;
+        margin: 16px 0;
+        width: 26em;
+        max-width: 30em;
     }
     
     
@@ -104,18 +110,18 @@
         margin-top: 18px;        
     }
 
-    .contact_info .map {
-        max-width: 305px;
+    .contact_info .map {        
         margin: 8px auto;
     }
 
     .map{
-        display:block
+        display:block;
+        text-align: center;
     }
 
     .map img {
         display: block;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         border: 1px solid black;
     }
