@@ -77,16 +77,15 @@ footer {
 @media only screen and (min-width: 32.5em) {
   .cards {
     margin: 1em;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .cards section img {
-    float: left;
-  }
+ 
 }
 
 @media only screen and (min-width: 54em) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  
 }
