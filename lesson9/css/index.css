@@ -120,7 +120,7 @@ footer {
     max-width: 38%;
   }
  
-  .cards section:nth-child(even) {
+  .cards a:nth-child(even) section {
     flex-direction: row-reverse;
   }
   
