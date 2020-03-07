@@ -18,7 +18,9 @@ fetch(requestURL)
         let factDiv = document.createElement('div');
         let h2 = document.createElement('h2');
         let photo = document.createElement('img');
+        let a = document.createElement('a')
 
+        a.href = getHref(towns[i].name);
         h2.textContent = towns[i].name;    
         photo.setAttribute('src',"images/"+towns[i].photo);
         photo.setAttribute('alt',"Picture of the " + towns[i].name + " area.");
@@ -35,8 +37,9 @@ fetch(requestURL)
         textDiv.appendChild(createSpan(towns[i].motto,"motto"));
         card.appendChild(textDiv);
         card.appendChild(photo);
+        a.appendChild(card);
         
-        document.querySelector('div.cards').appendChild(card);
+        document.querySelector('div.cards').appendChild(a);
       }
     }
 
@@ -47,5 +50,19 @@ fetch(requestURL)
         span.classList.toggle(className);
       return span     
     }
+
+    function getHref(name){
+      if(name == "Preston") {
+          return "preston-9.html";
+      }
+      if(name == "Fish Haven") {
+        return "#"; //"fishhaven-9.html";
+      }
+      if(name == "Soda Springs") {
+        return "#" //"sodasprings-9.html";
+      }
+      return "#";
+    }
+
 
   });
