@@ -35,6 +35,8 @@ fetch(requestURL)
         factDiv.appendChild(createSpan(towns[i].averageRainfall, "val"));
         textDiv.appendChild(factDiv);
         textDiv.appendChild(createSpan(towns[i].motto,"motto"));
+        textDiv.classList.toggle('town-info');
+
         card.appendChild(textDiv);
         card.appendChild(photo);
         a.appendChild(card);
