@@ -123,6 +123,13 @@ footer {
   .cards a:nth-child(even) section {
     flex-direction: row-reverse;
   }
+
+  .forecast_layout h3 {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 4px;
+  }
   
 }
 
