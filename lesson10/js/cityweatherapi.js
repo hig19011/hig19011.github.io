@@ -1,5 +1,5 @@
-const weatherApiUrl = "http://api.openweathermap.org/data/2.5/weather?units=imperial&APPID=5689b0e5963c68f2248c6dbcb104efd6" 
-const forecastApiUrl = "http://api.openweathermap.org/data/2.5/forecast?units=imperial&APPID=5689b0e5963c68f2248c6dbcb104efd6" 
+const weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&APPID=5689b0e5963c68f2248c6dbcb104efd6" 
+const forecastApiUrl = "https://api.openweathermap.org/data/2.5/forecast?units=imperial&APPID=5689b0e5963c68f2248c6dbcb104efd6" 
 const imageURL = "https://openweathermap.org/img/w/";
 
 function loadCityWeather(cityId) {
