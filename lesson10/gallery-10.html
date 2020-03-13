@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">    
+    <title>Weather Gallery</title>
+    <meta name="description" content="Gallery of weather images from around the world">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>    
+    <link rel="stylesheet" href="css/normalize.css">   
+    <link rel="stylesheet" href="css/gallery.css">
+  </head>
+  <body>
+    <header class="page-header">     
+      <div class="announcement hide">
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9:00 a.m. Saturday at the city park.</p>
+      </div>
+      <section class="header_title">
+        <a href="index.html"><img src="images/logo.png" alt="Drawing of sun partially covered by clouds"></a> 
+        <div>
+          <h1>Weather Streak</h1>                  
+          <p>Weather Trends, Old and New</p>
+        </div>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul class="hide" id="primaryNav">        
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston-10.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li class="selected"><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <h2>Weather Gallery</h2>
+      <div class="gallery">
+        <div>
+          <img src="images/placeholder.jpg" data-src="images/clouds1.jpg" alt="Massive lighting strike">
+          <span>Brilliant lightning strike</span>
+        </div>
+        <div>
+          <img src="images/placeholder.jpg" data-src="images/clouds2.jpg" alt="haboob behind residential housing">
+          <span>Incoming haboob</span>
+        </div>
+        <div>
+          <img src="images/placeholder.jpg" data-src="images/clouds3.jpg" alt="Tornado on dry plains">
+          <span>Tornado on the plains</span>
+        </div>
+        <div>
+          <img src="images/placeholder.jpg" data-src="images/clouds4.jpg" alt="Lightning strike right next to a tornado at night">
+          <span>Lightning with a tornado</span>
+        </div>
+        <div>
+          <img src="images/placeholder.jpg" data-src="images/clouds5.jpg" alt="Rainbow under clouds in a partially cloudy sky">
+          <span>Rainbow to brighten the day</span>
+        </div>
+        <div>
+          <img src="images/placeholder.jpg" data-src="images/clouds6.jpg" alt="Storm clouds gathers over a shore line">
+          <span>Storm front at the lake</span>
+        </div>
+        <div>
+          <img src="images/placeholder.jpg" data-src="images/clouds7.jpg" alt="Lightning strick behind a farm house at dusk">
+          <span>Lighting at dusk</span>
+        </div>
+        <div>
+          <img src="images/placeholder.jpg" data-src="images/clouds8.jpg" alt="Storm front over a farm house and dry wheat field">
+          <span>Storm front over wheat field</span>
+        </div>
+        <div>
+          <img src="images/placeholder.jpg" data-src="images/clouds9.jpg" alt="Super cell building up over farm land">
+          <span>Super cell building up</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-info">
+        <div class="flex-list">
+          <ul>
+            <li>&copy;<span> Weather Streak</span></li>
+            <li>Attributions</li>
+            <li><a href="../index.html">Gene Higgins</a></li>
+            <li><a href="https://openweathermap.org/" target="_blank">Open Weather Map</a></li>                        
+          </ul>
+        </div>            
+      </div>
+      <div class="footer-updated"><span id="currentDate"></span></div>   
+
+    </footer> 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/lazyloading.js"></script>
+  </body>
+</html>
