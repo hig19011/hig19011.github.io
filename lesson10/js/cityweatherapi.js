@@ -97,7 +97,7 @@ function updateForecast(data, elementId) {
 
     var image = document.createElement('img');
     image.setAttribute('src', imageURL+day.weather[0].icon+".png");
-    image.setAttribute('alt', day.weather.description);
+    image.setAttribute('alt', day.weather[0].description);
 
     var temp = document.createElement('p');
     temp.textContent = Math.round(day.main.temp) + " \xB0F";
