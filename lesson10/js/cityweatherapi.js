@@ -1,6 +1,6 @@
 const weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&APPID=5689b0e5963c68f2248c6dbcb104efd6" 
 const forecastApiUrl = "https://api.openweathermap.org/data/2.5/forecast?units=imperial&APPID=5689b0e5963c68f2248c6dbcb104efd6" 
-const imageURL = "https://openweathermap.org/img/w/";
+const imageURL = "https://openweathermap.org/img/wn/";
 
 function loadCityWeather(id, queryBy) {
   let cacheData = localStorage.getItem(id+":"+queryBy+":weather")
@@ -39,10 +39,10 @@ function getRainfall(data){
   rain = data.rain;
   if(typeof rain === "undefined")
     return 0;
-  if(typeof rain.h3 !== "undefined")
-    return rain.h3;
-  if(typeof rain.h1 !== "undefined")
-    return rain.h1;
+  if(typeof rain["3h"] !== "undefined")
+    return rain["3h"];
+  if(typeof rain["1h"] !== "undefined")
+    return rain["1h"];
   return 0;
 }
 
