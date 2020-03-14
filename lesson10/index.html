@@ -39,7 +39,7 @@
       <div class="cards"></div>     
       <div class="forecast">
         <h2>Five Day Forecast</h2>
-        <div class="forecast_layout">
+        <div id="prestonForecast" class="forecast_layout">
           <h3>Preston</h3>
           <div class="cell">
             <p class="day">Mon</p>
@@ -67,7 +67,7 @@
             <p class="temp">35&#176;/13&#176;</p>
           </div>        
         </div>
-        <div class="forecast_layout">
+        <div id="sodaSpringsForecast" class="forecast_layout">
           <h3>Soda Springs</h3>
           <div class="cell">
             <p class="day">Mon</p>
@@ -95,7 +95,7 @@
             <p class="temp">35&#176;/13&#176;</p>
           </div>        
         </div>
-        <div class="forecast_layout">
+        <div id="fishHavenForecast" class="forecast_layout">
           <h3>Fish Haven</h3>
           <div class="cell">
             <p class="day">Mon</p>
@@ -143,5 +143,12 @@
     <script src="js/scripts.js"></script>
     <script src="js/webfontload.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/cityweatherapi.js"></script>    
+    <script>
+      loadCityForecast(5604473,"city","prestonForecast");
+      loadCityForecast(5607916,"city","sodaSpringsForecast");
+      loadCityForecast(83287,"zip","fishHavenForecast");
+    </script>   
   </body>
   </html>

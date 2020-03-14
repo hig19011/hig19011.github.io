@@ -68,7 +68,7 @@
       </div>
       <div class="forecast">
         <h3>Five Day Forecast</h3>
-        <div class="forecast_layout">
+        <div id="prestonForecast" class="forecast_layout">
           <div class="cell">
             <p class="day">Mon</p>
             <img src="images/sunny.png" alt="sunny forecast">
@@ -150,8 +150,8 @@
     <script src="js/windchill.js"></script>
     <script src="js/cityweatherapi.js"></script>    
     <script>
-      loadCityWeather(5604473);
-      loadCityForecast(5604473);
+      loadCityWeather(5604473,"city");
+      loadCityForecast(5604473,"city","prestonForecast");
     </script>   
          
   </body>

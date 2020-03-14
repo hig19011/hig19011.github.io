@@ -2,21 +2,21 @@ const weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imp
 const forecastApiUrl = "https://api.openweathermap.org/data/2.5/forecast?units=imperial&APPID=5689b0e5963c68f2248c6dbcb104efd6" 
 const imageURL = "https://openweathermap.org/img/w/";
 
-function loadCityWeather(cityId) {
-  let cacheData = localStorage.getItem(cityId+":weather")
+function loadCityWeather(id, queryBy) {
+  let cacheData = localStorage.getItem(id+":"+queryBy+":weather")
   weatherCache = JSON.parse(cacheData);
   if(weatherCache != null && new Date(weatherCache.expires) > new Date()){
     updateWeatherSummary(weatherCache.data);
   }
   else{
-    let apiUri = weatherApiUrl + "&id="+ cityId;
+    let apiUri = makeWeatherUri(weatherApiUrl, id, queryBy);
     fetch(apiUri)
       .then((response) => response.json())
       .then((jsObject) => {
         var weatherCache = {};
         weatherCache.expires = new Date(new Date().getTime()+10*60000);
         weatherCache.data = jsObject;
-        localStorage.setItem(cityId+":weather",JSON.stringify(weatherCache));      
+        localStorage.setItem(id+":"+queryBy+":weather",JSON.stringify(weatherCache));      
         
         updateWeatherSummary(weatherCache.data);
     });
@@ -46,31 +46,46 @@ function getRainfall(data){
   return 0;
 }
 
+function makeWeatherUri(url, id, queryBy){
+  if(queryBy == "zip"){
+    return url + "&zip="+ id;
+  }
+  return url + "&id="+ id;  
+}
 
-function loadCityForecast(cityId){
-  let cacheData = localStorage.getItem(cityId+":forecast")
+function loadCityForecast(id, queryBy, elementId){
+  let cacheData = localStorage.getItem(id+":"+queryBy+":forecast")
   let forecastCache = JSON.parse(cacheData);
   if(forecastCache != null && new Date(forecastCache.expires) > new Date()){
-    updateForecast(forecastCache.data);
+    updateForecast(forecastCache.data, elementId);
   }
   else {
-    let apiUri = forecastApiUrl + "&id="+ cityId;
+    let apiUri = makeWeatherUri(forecastApiUrl, id, queryBy);;
     fetch(apiUri)
       .then((response) => response.json())
       .then((jsObject) => {
         var forecastCache = {};
         forecastCache.expires = new Date(new Date().getTime()+10*60000);
         forecastCache.data = jsObject;
-        localStorage.setItem(cityId+":forecast",JSON.stringify(forecastCache));     
-        updateForecast(forecastCache.data);
+        localStorage.setItem(id+":"+queryBy+":forecast",JSON.stringify(forecastCache));     
+        updateForecast(forecastCache.data, elementId);
     });
   }
 }
 
-function updateForecast(data) {
+function updateForecast(data, elementId) {
   const forecastData = data.list.filter(x=> x.dt_txt.includes('18:00:00'));
-  var layout = document.getElementsByClassName('forecast_layout')[0];
-  layout.innerHTML = '';
+  var layout = document.getElementById(elementId);
+  var header = layout.getElementsByTagName("h3");
+  if(header.length > 0)
+  { 
+    var h3 = header[0].cloneNode(true);
+    layout.innerHTML = '';
+    layout.appendChild(h3);
+  }
+  else {
+    layout.innerHTML = '';
+  }
 
   forecastData.forEach(day => {
     var cell = document.createElement('div');
