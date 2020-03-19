@@ -71,6 +71,7 @@
         <div id="prestonForecast" class="forecast_layout">          
         </div>
       </div>
+      <section id="localEvents" class="local-events"></section>      
       <div class="feature_article">
         <h3>Windy snowstorm expected to make roads dangerous</h3>
         <h4>By Necia P. Seamons</h4>
@@ -123,10 +124,12 @@
     <script src="js/scripts.js"></script>
     <script src="js/webfontload.js"></script>
     <script src="js/windchill.js"></script>
-    <script src="js/cityweatherapi.js"></script>    
+    <script src="js/cityweatherapi.js"></script>
+    <script src="js/townevents.js"></script>    
     <script>
       loadCityWeather(5604473,"city");
       loadCityForecast(5604473,"city","prestonForecast");
+      getTownEvents("Preston")
     </script>   
          
   </body>

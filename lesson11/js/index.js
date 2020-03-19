@@ -45,26 +45,25 @@ fetch(requestURL)
       }
     }
 
-    function createSpan(text, className){
-      let span = document.createElement('span');
-      span.textContent = text;      
-      if(className != undefined)
-        span.classList.toggle(className);
-      return span     
-    }
-
-    function getHref(name){
-      if(name == "Preston") {
-          return "preston.html";
-      }
-      if(name == "Fish Haven") {
-        return "fishhaven.html";
-      }
-      if(name == "Soda Springs") {
-        return "sodasprings.html";
-      }
-      return "#";
-    }
-
-
   });
+
+function createSpan(text, className){
+  let span = document.createElement('span');
+  span.textContent = text;      
+  if(className != undefined)
+    span.classList.toggle(className);
+  return span     
+}
+
+function getHref(name){
+  if(name == "Preston") {
+      return "preston.html";
+  }
+  if(name == "Fish Haven") {
+    return "fishhaven.html";
+  }
+  if(name == "Soda Springs") {
+    return "sodasprings.html";
+  }
+  return "#";
+}

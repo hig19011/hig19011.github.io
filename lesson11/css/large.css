@@ -31,10 +31,12 @@
         margin: 2em auto;
     }
 
-    
-
-    .forecast_layout {
+    .forecast_layout, 
+    .local-events {
         width: 30em;
+        margin: 8px auto;
+    }
+    .local-event-list {
         margin: 8px auto;
     }
 

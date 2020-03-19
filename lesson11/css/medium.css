@@ -43,16 +43,16 @@
         align-self: center;
     }
 
-    .forecast img {
-        display: block;
-        margin: 1em auto;
-    }
-
     .forecast h3 {
         text-align: center;
         min-width: 6em;
         margin: auto;
     }
+
+    .forecast img {
+        display: block;
+        margin: 1em auto;
+    }  
 
     .forecast_layout {
         background-color: #84a98c;
@@ -61,6 +61,7 @@
         flex-direction: row;
         margin: 8px;
         justify-content: center;
+        width: 23em;
     }
 
     .forecast_layout h3 {
@@ -93,6 +94,15 @@
         text-align: center;
         padding-left: 1em;
         padding-right: 1em;
+    }
+
+    .local-events {
+        margin: 1em auto 1em auto;
+    }
+
+    .local-event-list {
+        width: 22em;
+        margin: 8px;
     }
 
     .feature_article {
