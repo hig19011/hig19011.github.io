@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">    
+    <title>Weather Center</title>
+    <meta name="description" content="Report a storm at the Weather Streak Storm Center">    
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">    
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/stormcenter.css">
+  </head>
+  <body>   
+    <header class="page-header">          
+      <section class="header_title">
+        <a href="index.html"><img src="images/logo.png" alt="Drawing of sun partially covered by clouds"></a> 
+        <div>
+          <h1>Weather Streak</h1>                  
+          <p>Weather Trends, Old and New</p>
+        </div>        
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul class="hide" id="primaryNav">        
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li class="selected"><a href="#">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+       <h2>Storm Center</h2>
+       <form method="get" action="stormreport-thankyou.html">
+        <h3>Make a Storm Report</h3>
+        <fieldset>
+          <legend>Contact Information</legend> 
+          <label class="top">Full Name* <input type="text" name="fullname" required pattern="[a-zA-Z ]{5,}"></label>
+          <label class="top">Email<input type="email" name="email" placeholder="stormy@stormwatcher.com"></label>
+          <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+          <label class="top">Zip Code*<input type="number" name="zipcode" required></label>
+        </fieldset>
+        <fieldset>
+          <legend>Storm Details</legend>        
+          <label class="top">Storm Date<input type="date" name="reportedon"></label>
+          <label class="top">Storm Type<input list="stormtype" name="stormtype">
+            <datalist id="stormtype">
+              <option value="Flash Flood">
+              <option value="Hail">
+              <option value="Hurricane">
+              <option value="Thunderstorm">
+              <option value="Tornado">
+            </datalist>
+          </label>
+          <label class="top"><span>Storm Severity</span>
+            <input type="range" name="stormseverity" min="1" max="10" step="1" list="tickmarks" value="5" onchange="adjustSeverity(this.value)" oninput="adjustSeverity(this.value)" class="range_text">
+            <span id="stormSeverityNumber" class="range_text">5</span>          
+            <datalist id="tickmarks">           
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+              <option value="5">
+              <option value="6">
+              <option value="7">
+              <option value="8">
+              <option value="9">
+              <option value="10">
+            </datalist>
+          </label>
+          <label class="top">Storm Region
+            <select name="stormregion" >            
+              <option selected disabled>Select Region ...</option>
+              <option value="Preston">Preston</option>
+              <option value="Soda Springs">Soda Springs</option>
+              <option value="Fish Haven">Fish Haven</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Are You in Personal Danger</legend>
+          <label class="side"><input type="radio" name="dangerlevel" value="yes">Yes</label>
+          <label class="side"><input type="radio" name="dangerlevel" value="maybe">Maybe</label>
+          <label class="side"><input type="radio" name="dangerlevel" value="no">No</label>
+          <label class="top">Additional Information<textarea name="additionalInfo"></textarea>
+          </label>
+        </fieldset>
+        <div>
+          <input type="submit" value="Send Your Storm Report" class="submit_button">
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="footer-info">
+        <div class="flex-list">
+          <ul>
+            <li>&copy;<span> Weather Streak</span></li>
+            <li>Attributions</li>
+            <li><a href="../index.html">Gene Higgins</a></li>
+            <li><a href="https://openweathermap.org/" target="_blank" rel="noopener">Open Weather Map</a></li>                                          
+          </ul>
+        </div>            
+      </div>
+      <div class="footer-updated"><span id="currentDate"></span></div>   
+
+    </footer>    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/stormcenter.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+  </html>

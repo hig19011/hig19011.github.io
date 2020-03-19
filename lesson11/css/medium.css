@@ -1,0 +1,132 @@
+@media only screen and (min-width: 32.5em) {
+
+    .header_title h1 {
+        font-size: 2.5em;
+    }
+
+    .header_title {
+        height: 7em;
+    }
+
+    .content {
+        margin: 16px 0 24px 0;
+        align-self: center;
+        width: 30em;
+        max-width: 30em;
+    }
+
+    .hero {
+        margin: 1em auto 2em auto;
+        max-width: none;
+        align-self: stretch;
+    }
+
+    .summary {
+        padding: 16px 24px;
+        position: absolute;
+        top: 2em;
+        left: 2em;
+        background-color: #2f3e46;
+        color: #84a98c;
+        box-shadow: 0 2px 30px #333;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .forecast {
+        display: inline-block;
+        margin: 2em auto 1em auto;
+        
+        background-color: #cad2c5;
+        padding: 8px;
+        box-shadow: 0px 0px 20px -3px #00000044;
+        align-self: center;
+    }
+
+    .forecast img {
+        display: block;
+        margin: 1em auto;
+    }
+
+    .forecast h3 {
+        text-align: center;
+        min-width: 6em;
+        margin: auto;
+    }
+
+    .forecast_layout {
+        background-color: #84a98c;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 8px;
+        justify-content: center;
+    }
+
+    .forecast_layout h3 {
+        width: 100%;
+        display: inline-block;
+        margin: auto;        
+        
+    }
+
+    .cell {        
+        display: inline-block;
+        flex: 1;        
+        border-left: 1px solid #2f3e46;
+        border-top: 1px solid #2f3e46;
+        border-bottom: 1px solid #2f3e46;
+    }
+
+    .cell:last-child {
+        border-right: 1px solid #2f3e46;
+    }
+
+    .day {
+        margin: 0 auto;
+        background-color: #2f3e46;
+        color: #cad2c5;
+        text-align: center;
+    }
+
+    .temp {
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .feature_article {
+        margin: auto;
+        padding: 12px;
+        max-width: none;
+    }
+
+    .contact_info {       
+        border: #2f3e46 solid 1px;
+        margin: 16px 0;
+        width: 26em;
+        max-width: 30em;
+    }
+    
+    
+    .contact_info .communication {
+        margin-top: 18px;        
+    }
+
+    .contact_info .map {        
+        margin: 8px auto;
+    }
+
+    .map{
+        display:block;
+        text-align: center;
+    }
+
+    .map img {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        border: 1px solid black;
+    }
+
+}
