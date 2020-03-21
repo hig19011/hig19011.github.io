@@ -36,6 +36,10 @@ main h2 {
  
 }
 
+.content {
+  margin: 0 0 0 0;
+}
+
 a {
   text-decoration: none;
   color: unset;
@@ -100,6 +104,10 @@ footer {
 }
 
 @media only screen and (min-width: 32.5em) {
+
+  .content {
+    margin: 16px 0 24px 0;
+  }
   .cards {    
     grid-template-columns: 1fr;
   }
