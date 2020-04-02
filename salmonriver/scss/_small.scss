@@ -1,0 +1,129 @@
+body {
+  background-color: $bodyBackground;
+  color: $bodyColor;
+  font-family: $fontFamilyBody;
+  font-weight: $regularWeight;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  background-color: $headerBackground; 
+  color: $bodyColor; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .logo {
+    display: inline-block;
+    width: 85px;
+  }
+  .title {
+    flex-shrink: 0;
+  }
+    
+  h1 {
+    font-size: 24px;
+    margin: 8px 0;    
+  }
+  h3 {
+    font-size: 20px;
+    margin: 8px 0 8px 16px;    
+  }
+  div {
+    display: inline-block;
+    
+  }
+  button{
+    font-size: large;
+    background-color: transparent;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: 16px;
+    padding: 12px;
+    border: none;
+    
+  }
+
+  nav {
+    order: 4;
+    background-color: $headerBackground;
+    color: $bodyColor;
+    margin: 16px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    a{
+      vertical-align: middle;
+      text-decoration: none;
+      margin: 8px;
+      span{
+        margin: 4px;
+        padding: 8px 24px; 
+        font-weight: bold;     
+        color: $bodyColor
+      }
+    }
+  
+    span.selected {
+      background-color: $accentColor;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $fontFamilyHeader;
+  font-weight: $heavyWeight;
+}
+
+
+
+main{
+  flex: 1;
+
+  h2 {
+    text-align: center;
+  }
+
+  .hero {
+    position: relative;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+    }
+
+    a {
+      position: absolute;
+      bottom: 16px;
+      left: 8px;
+      text-decoration: none;
+      
+      
+      color: $bodyColor;
+      padding: 0;
+    }
+    span {
+      display: inline;    
+      margin: 0;
+      padding: 0;    
+      background-color: rgba(255, 255, 255, .40);
+      padding: 4px;
+      border: 1px solid black;
+      font-weight: 700;
+    }
+  }  
+}
+
+.locationInfo{
+ 
+}
+.locationInfo iframe {
+  max-width: 100%;
+}
+
+footer {
+
+}
