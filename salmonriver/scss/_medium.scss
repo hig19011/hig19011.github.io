@@ -7,22 +7,20 @@ header {
     font-size: 32px;
     margin: 8px 0;    
   }
-  h3 {
+  h2 {
     font-size: 24px;
-    margin: 8px 0 8px 16px;    
-  }
-
-  button{
-    font-size: 32px;
-    width: 240px;
-    text-align: right;   
-    margin-left: auto;
-    margin-right: 8px;
-    padding: 12px;
-  }
+  } 
   
   nav{
-    margin: 16px auto;
+    
+    a{     
+      margin: 8px;
+      span{
+        margin: 4px 0px;
+        padding: 8px 12px; 
+        font-size: medium;
+      }
+    }
   }
 }
 
@@ -37,4 +35,7 @@ main{
       font-size: 24px;
     }
   }  
+  .contactInfo {
+    margin: 12px auto;
+  }
 }

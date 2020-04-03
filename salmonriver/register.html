@@ -9,13 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Raleway:400,700&display=swap" rel="stylesheet"> 
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>    
     <link rel="stylesheet" href="css/styles.css">  
+    <link rel="stylesheet" href="css/register.css">
   </head>
   <body>   
     <header>       
       <a href="index.html"><img class="logo" src="images/logo.svg" alt="Salmon River Adventures logo, a salmon"></a>
       <div class="title">
         <h1>Salmon River Adventures</h1>
-        <h3>A great time for all</h3>
+        <h2>A great time for all</h2>
       </div>
       <nav>      
         <a href="index.html"><span>Home</span></a>
@@ -24,10 +25,88 @@
         <a href="register.html"><span class="selected">Register</span></a>
         <a href="contactUs.html"><span>Contact Us</span></a>
       </nav>
-      <button>&#9776;</button>
     </header>    
     <main>     
-      <h2>Register</h2>      
+      <h2>Registration</h2>   
+      <div class="registerContent">
+        <section class="adventureInfo">
+          <h2>Adventure Information</h2>
+          <section class="tripSpecs">
+            <h3>River Drift</h3>
+            <span class="label">Duration</span>
+            <span>6 Days</span>
+            <span class="label">Skill Level</span>
+            <span>Beginner</span>
+            <span class="label">Cost</span>
+            <span>$450 per guest</span>
+            <span class="label">Services</span>
+            <ul>
+              <li>Adventure guides</li>
+              <li>3 meals/day</li>
+              <li>Evening refreshments</li>            
+            </ul>
+          </section>
+          <section class="tripSpecs">
+            <h3>Rapid Rafting</h3>
+            <span class="label">Duration</span>
+            <span>4 Days</span>
+            <span class="label">Skill Level</span>
+            <span>Intermediate</span>
+            <span class="label">Cost</span>
+            <span>$335 per guest</span>
+            <span class="label">Services</span>
+            <ul>
+              <li>Adventure guides</li>
+              <li>3 meals/day</li>
+              <li>Evening refreshments</li>
+              <li>Porting</li>
+            </ul>
+          </section>
+          <section class="tripSpecs">
+            <h3>Kayaking Kraze</h3>
+            <span class="label">Duration</span>
+            <span>5 Days</span>
+            <span class="label">Skill Level</span>
+            <span>Advanced</span>
+            <span class="label">Cost</span>
+            <span>$500 per guest</span>
+            <span class="label">Services</span>
+            <ul>
+              <li>Adventure guides</li>
+              <li>3 meals/day</li>
+              <li>Evening refreshments</li>
+              <li>Clothes lines</li>
+            </ul>
+          </section>
+        </section> 
+        <section class="registerForm">
+          <form method="get" action="stormreport-thankyou.html">
+            <h2>Register</h2>
+            <fieldset>
+              <legend>Choose your Adventure</legend>
+              <label><input type="radio" name="adventure" value="1">River Drift</label>
+              <label><input type="radio" name="adventure" value="2">Rapid Rafting</label>
+              <label><input type="radio" name="adventure" value="3">Kayaking Kraze</label>          
+            </fieldset>
+            <fieldset>
+              <legend>Reservation Info</legend>
+              <label>Start Date<input type="date" name="reservationOn"></label>
+              <label>Group Size<input type="number" name="groupSize"></label>
+            </fieldset>
+            <fieldset>
+              <legend>Customer Info</legend>
+              <label>Name<input type="text" name="name"></label>
+              <label>Phone Number<input type="tel" name="name"></label>
+              <label>Email<input type="email" name="name"></label>          
+            </fieldset>
+            <fieldset>
+              <legend>Questions and Comments</legend>
+              <label><textarea name="questions"></textarea></label>          
+            </fieldset>
+            <button type="submit" name="submit">Request My Adventure</button>
+          </form>
+        </section>      
+      </div>  
     </main>
     <footer>     
       Gene Higgins | <a href="https://www.vecteezy.com/free-vector/animal" target="_blank">Animal Vectors by Vecteezy</a>

@@ -21,40 +21,30 @@ header {
   }
   .title {
     flex-shrink: 0;
+    flex-grow: 1;
   }
     
   h1 {
     font-size: 24px;
     margin: 8px 0;    
   }
-  h3 {
+  h2 {
     font-size: 20px;
-    margin: 8px 0 8px 16px;    
+    margin: 8px 0 0px 16px;    
   }
   div {
     display: inline-block;
     
   }
-  button{
-    font-size: large;
-    background-color: transparent;
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: 16px;
-    padding: 12px;
-    border: none;
-    
-  }
 
   nav {
-    order: 4;
     background-color: $headerBackground;
     color: $bodyColor;
-    margin: 16px auto;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+    align-content: flex-end;
     a{
       vertical-align: middle;
       text-decoration: none;
@@ -63,7 +53,8 @@ header {
         margin: 4px;
         padding: 8px 24px; 
         font-weight: bold;     
-        color: $bodyColor
+        color: $bodyColor;
+        font-size: smaller;
       }
     }
   
@@ -82,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 
 main{
   flex: 1;
-
+  text-align: center;
   h2 {
     text-align: center;
   }
@@ -115,15 +106,69 @@ main{
       font-weight: 700;
     }
   }  
-}
 
-.locationInfo{
- 
-}
-.locationInfo iframe {
-  max-width: 100%;
+  .companyIntro {
+    text-align: left;
+  }
+
+  .weatherInfo{    
+    display: inline-block;    
+    margin: 12px;
+    text-align: center;       
+    
+    .weatherSummary {      
+      display: grid;
+      grid-template-columns: 2fr 4fr;
+      grid-gap: 8px;      
+      border: .5px solid black;
+      margin: 8px;
+      padding: 8px;
+      background-color: $cardBackground;
+      box-shadow: 0 0 15px  gray;
+
+      text-align: left;
+      display: grid;
+      grid-template-columns: 2fr 2fr 3fr 2fr;
+      grid-gap: 4px;
+
+      img {
+        grid-column-start: 1;
+        grid-column-end:3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+      }
+    }
+  }
+
+  .locationInfo{
+  
+  }
+  .locationInfo iframe {
+    max-width: 100%;
+  }
+
+  .contactInfo {
+    margin: 12px auto;
+    display: inline-block;
+    text-align: left;
+    .commInfo{
+      margin: 12px auto;    
+      span {
+        
+        display: block;
+      }
+    }
+  }
 }
 
 footer {
 
+}
+
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

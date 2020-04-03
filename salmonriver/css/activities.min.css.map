@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,AAAC,CACZ,OAAO,CAAE,GAAG,CASb,AAVD,AAEE,aAFW,CAEX,EAAE,AAAA,CACA,SAAS,CAAE,IAAI,CAChB,AAJH,AAME,aANW,CAMX,GAAG,AAAA,CACD,KAAK,CAAE,KAAK,CACZ,OAAO,CAAE,GAAG,CACb",
+    "sources": [
+        "../scss/activities.scss"
+    ],
+    "names": [],
+    "file": "activities.min.css"
+}

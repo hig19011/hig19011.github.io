@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,GAAG;CASb;;AAVD,AAEE,UAFQ,CAER,EAAE,CAAA;EACA,SAAS,EAAE,IAAI;CAChB;;AAJH,AAME,UANQ,CAMR,GAAG,CAAA;EACD,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,GAAG;CACb",
+    "sources": [
+        "../scss/guides.scss"
+    ],
+    "names": [],
+    "file": "guides.css"
+}
