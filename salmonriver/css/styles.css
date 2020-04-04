@@ -573,40 +573,44 @@ main .hero span {
 
 main .companyIntro {
   text-align: left;
+  width: 80%;
+  margin: 16px auto;
 }
 
 main .weatherInfo {
   display: inline-block;
-  margin: 12px;
+  margin: 12px auto;
   text-align: center;
 }
 
 main .weatherInfo .weatherSummary {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 4fr;
-      grid-template-columns: 2fr 4fr;
-  grid-gap: 8px;
   border: .5px solid black;
-  margin: 8px;
+  margin: 8px auto;
   padding: 8px;
   background-color: #abf8ff;
   -webkit-box-shadow: 0 0 15px  gray;
           box-shadow: 0 0 15px  gray;
   text-align: left;
+  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 2fr 3fr 2fr;
-      grid-template-columns: 2fr 2fr 3fr 2fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4px;
+}
+
+main .weatherInfo .weatherSummary .labelRight {
+  text-align: right;
+  padding-right: 8px;
+  font-weight: 700;
 }
 
 main .weatherInfo .weatherSummary img {
   -ms-grid-column: 1;
       grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
   -ms-grid-row: 1;
       grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-end: 6;
 }
 
 main .locationInfo iframe {
@@ -625,6 +629,57 @@ main .contactInfo .commInfo {
 
 main .contactInfo .commInfo span {
   display: block;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3em;
+}
+
+footer hr {
+  width: 75%;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+footer .pipeList {
+  position: relative;
+  margin: 1em;
+  overflow: hidden;
+  display: table;
+  margin: 0 auto;
+}
+
+footer .pipeList ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -1px;
+  padding-left: 0;
+}
+
+footer .pipeList li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  margin: .25em 0;
+  padding: 0 1em;
+  text-align: center;
+  border-left: 1px solid;
 }
 
 .clearfix::after {
@@ -652,6 +707,10 @@ main .contactInfo .commInfo span {
     margin: 4px 0px;
     padding: 8px 12px;
     font-size: medium;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
   }
   main .hero a {
     bottom: 24px;
