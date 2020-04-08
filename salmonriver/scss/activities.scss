@@ -1,3 +1,6 @@
+@import "variables";
+
+
 .activityInfo {
   padding: 8px;
   text-align: center;
@@ -15,18 +18,62 @@
     max-width: 100%;   
     margin: 0 auto;  
   }
+
+  .tripSpecs {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 8px;
+    border: .5px solid black;
+    margin: 8px auto;
+    padding: 8px;
+    background-color: $cardBackground;
+    box-shadow: 0 0 15px  gray;
+    text-align: left;
+    h3{
+      text-align: center;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      font-size: 24px;
+    }
+  
+    ul{
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      list-style: none;
+    }
+  
+    .label {
+      text-align: right;
+      font-weight: bold;
+      margin-right: 8px;
+    }  
+  }
+
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 @media only screen and (min-width: 32.5em) {
-  .activityInfo {    
-    img{    
+  .activityInfo {   
+    .tripSpecs {
+      max-width: 60%;
+    } 
+
+    img {    
       max-width: 48%;  
       float: right;  
       margin: 0 0 16px 16px;      
     }
     
   }
-  .activityInfo:nth-child(even) {
+  .activityInfo:nth-child(even) {    
     img {
       float: left;
       margin: 0 16px 16px 0; 
@@ -35,5 +82,9 @@
 } 
 
 @media only screen and (min-width: 54em) {
-  
+  .activityInfo {   
+    .tripSpecs {
+      max-width: 50%;
+    } 
+  }
 } 

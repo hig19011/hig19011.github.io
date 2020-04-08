@@ -20,6 +20,12 @@
   }
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 @media only screen and (min-width: 32.5em) {
   .guideInfo {    
     img{    

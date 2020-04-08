@@ -1,0 +1,76 @@
+{
+  "guides": [
+    {
+      "name": "Ariana Lowe",           
+      "imageurl": "images/ariana-lowe-352w.jpg",
+      "imageurllarge": "images/ariana-lowe-742w.jpg",
+      "imagedescr": "head shot of young woman on the river looking over her shoulder",
+      "certlevel": "Trip Leader",
+      "yearexp": 9,
+      "email": "Ariana@sra.com",
+      "bio": "Ari discovered river guiding at the tender age of 18 in Moab, Utah in 1997. She has been guiding ever since. Running rivers is one of the greatest passions in Ari’s life. This love for running new rivers drew her to Idaho in 2005. Fast forward to today and you will still find her sharing her passion with guests on the river, meanwhile taking reservations, managing logistics, and marketing for Canyons, year round. Her warm demeanor, kind spirit, sense of adventure, and endless creative talents are a huge part of Salmon River Adventures. Ari is an avid kayaker, skilled oarsman and talented watercolor artist. Her goal is to run a new river every year for the rest of her life and to run rivers on every continent possible. She loves sharing the beautiful river corridors with people from around the world and watching the transformation that Mother Nature inspires in us all. She abides by the philosophy to live your dreams, follow your heart and work hard to play hard.",
+      "preferences" : [
+        {
+          "label":"Favorite River Meal:",
+          "pref":"Migas, big cookie and bacon"
+        },
+        {
+          "label":"Top three favorite rapids:",
+          "pref":"Powerhouse (MF), Cutthroat (MF), Big Mallard (MN)"
+        },
+        {
+          "label":"Most memorable swim in a river:",
+          "pref":"Little Niagra in Cataract Canyon at 50,000 cfs"
+        }
+      ]      
+    },
+    {
+      "name": "Tim Mason",           
+      "imageurl": "images/tim-mason-352w.jpg",
+      "imageurllarge": "images/tim-mason-472w.jpg",
+      "imagedescr": "older man with an apron on next to a grill",
+      "certlevel": "Guide",
+      "yearexp": 7,
+      "email": "Tim@sra.com",
+      "bio": "Tim brings much to the table at Salmon River Adventures, with a myriad of talents, a twinkle in his eye, and a sense of playfulness that makes you feel like you have just met an old friend. Born and raised in Chile, Tim is fluent in Spanish and English. Tim discovered river guiding in 1980 through the Nantahala Outdoor Center (NOC). He also graduated from the University of Utah with an Architecture degree. Using both of these skills, Tim worked for NOC for 20 years. In 1994 Tim won a free trip on the Middle Fork of the Salmon with Canyons. Tim fit in with the crew immediately and was promptly offered a job guiding with Canyons. Since then he has delighted us and many a guest with his fun-loving demeanor and passion for life on the river. When not running rivers with Canyons in Idaho, Tim lives in North Carolina with his lovely wife Amy and their furry friends and continues to design and build custom homes.",
+      "preferences" : [
+        {
+          "label":"Favorite thing to cook on the river:",
+          "pref":"I love to grill"
+        },
+        {
+          "label":"Top three favorite rapids:",
+          "pref":"Not to be repetitive, but all of them"
+        },
+        {
+          "label":"Most memorable swim in a river:",
+          "pref":"Little Falls on the South Fork of the Payette."
+        }
+      ]      
+    },
+    {
+      "name": "Tyler Knibbe",           
+      "imageurl": "images/greg-mcfadden-352w.jpg",
+      "imageurllarge": "images/greg-mcfadden-472w.jpg",
+      "imagedescr": "man guiding a raft down a river",
+      "certlevel": "Instructor",
+      "yearexp": 18,
+      "email": "Tyler@sra.com",
+      "bio": "Tyler loves the Frank Church Wilderness and the rivers that run through it, dearly. He is a self-proclaimed bird nerd, flower sniffer, and stargazer who loves sharing his knowledge of these things with others, through his interpretive talks. In fact, Tyler is a certified interpretive guide by the National Association of Interpreters. He has spent summers guiding on rivers in Idaho, Oregon, Colorado, Montana, Nevada, and Utah. With his great sense of humor, Tyler also has an amazing rapport with kids. He recently earned a Master’s Degree in Elementary Education and works as a 5th-grade teacher in Salt Lake City. He is also a ski coach for the Snowbird Race Team.",
+      "preferences" : [
+        {
+          "label":"Favorite thing to cook on the river:",
+          "pref":"Cooking Bacon at 6 am on the Fourth of July with a Bald Eagle flying over."
+        },
+        {
+          "label":"Top three favorite rapids:",
+          "pref":"Tappan Falls (MF), Rubber (MF), Big Mallard (MN)"
+        },
+        {
+          "label":"Most memorable swim in a river:",
+          "pref":"Little Falls on the South Fork of the Payette River with Tim"
+        }
+      ]      
+    }
+  ]
+}

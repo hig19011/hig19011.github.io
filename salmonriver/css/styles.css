@@ -629,9 +629,12 @@ main .contactInfo {
   text-align: center;
 }
 
+main .contactInfo a {
+  text-decoration: none;
+}
+
 main .contactInfo .commInfo {
   width: 90%;
-  text-align: left;
   font-size: 16px;
   margin: 12px auto;
 }
@@ -643,7 +646,6 @@ main .contactInfo .commInfo span {
 main .contactInfo .socialInfo {
   width: 90%;
   margin: 12px auto;
-  text-align: left;
 }
 
 footer {
@@ -697,12 +699,6 @@ footer .pipeList li {
   border-left: 1px solid;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 @media only screen and (min-width: 32.5em) {
   header .logo {
     display: inline-block;
@@ -742,13 +738,17 @@ footer .pipeList li {
     margin: 0 0 12px 12px;
   }
   main .contactInfo {
+    -ms-flex-item-align: flex;
+        -ms-grid-row-align: flex;
+        align-self: flex;
+    width: 80%;
     margin: 12px auto;
   }
   main .contactInfo .commInfo {
-    width: 65%;
+    width: 70%;
   }
   main .contactInfo .socialInfo {
-    width: 65%;
+    width: 70%;
   }
 }
 
@@ -784,11 +784,14 @@ footer .pipeList li {
   main .hero span {
     font-size: 24px;
   }
+  main .contactInfo {
+    width: 70%;
+  }
   main .contactInfo .commInfo {
-    width: 50%;
+    width: 60%;
   }
   main .contactInfo .socialInfo {
-    width: 50%;
+    width: 60%;
   }
 }
 

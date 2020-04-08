@@ -164,10 +164,12 @@ main{
     margin: 12px auto;
     display: inline-block;
     text-align: center;
+    a {
+      text-decoration: none;
+    }
     
     .commInfo{
       width: 90%;
-      text-align: left;
       font-size: 16px;
       margin: 12px auto;    
       span {
@@ -177,8 +179,7 @@ main{
     }
     .socialInfo{
       width: 90%;
-      margin: 12px auto;   
-      text-align: left; 
+      margin: 12px auto;  
     }
   }
 }
@@ -224,8 +225,3 @@ footer {
 
 
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}

@@ -51,15 +51,15 @@ main{
   }
 
   .contactInfo {
+    align-self: flex;
+    width:80%;
     margin: 12px auto;
-  }
-
-  .contactInfo {       
+         
     .commInfo{
-      width: 65%;      
+      width: 70%;      
     }
     .socialInfo{
-      width: 65%;      
+      width: 70%;      
     }
   }
 }

@@ -1,0 +1,54 @@
+@import "forms";
+
+main {
+  .contactForm {
+    margin: 12px 12px 24px 12px;
+  }
+
+  .contactInfo {
+    width: 100%;
+    margin: 12px auto;
+    display: inline-block;
+    text-align: center;
+    a {
+      text-decoration: none;
+    }
+    
+    .commInfo{   
+      width: 100%; 
+      font-size: 16px;
+      margin: 12px auto;    
+      span {
+        
+        display: block;
+      }
+    }
+    .socialInfo{
+      width: 100%;
+      margin: 12px auto;  
+    }
+  }
+
+  .locationInfo {
+    margin: 12px;
+    max-width: 90%;
+
+    iframe{
+      max-width: 90%;
+    }
+  }
+}
+
+@media only screen and (min-width: 32.5em) {
+  .contactInfo {
+    align-self: flex-end;   
+    margin: 12px auto;
+  }  
+} 
+
+@media only screen and (min-width: 54em) { 
+
+} 
+
+
+
