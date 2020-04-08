@@ -22,12 +22,29 @@ fieldset label.side {
 fieldset input {
   display: block;
   margin: 8px 8px;
-  padding: 1em;
   border-radius: 7px;
 }
 
 fieldset .side input {
   display: inline;
+}
+
+fieldset label.top input:required,
+fieldset label.top textarea:required {
+  border: red solid 2px;
+}
+
+fieldset label.top input:required:valid,
+fieldset label.top textarea:required:valid {
+  border: black solid 2px;
+}
+
+fieldset label.side input[type="radio"]:required + span {
+  color: red;
+}
+
+fieldset label.side input[type="radio"]:valid + span {
+  color: black;
 }
 
 fieldset textarea {

@@ -4,8 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">    
-    <title>Salmon River Adventures - Home</title>
-    <meta name="description" content="The best tour guides for white water rafting in Idaho.">    
+    <title>Salmon River Adventures - Register</title>
+    <meta name="description" content="Come register for an Adventure with us today.">    
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet"> 
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>    
@@ -85,24 +85,23 @@
             <h2>Register</h2>
             <fieldset>
               <legend>Customer Info</legend>
-              <label class="top">Name<input type="text" name="name"></label>
-              <label class="top">Phone Number<input type="tel" name="name"></label>
-              <label class="top">Email<input type="email" name="name"></label>          
+              <label class="top">Name*<input type="text" name="name" required pattern="[a-zA-Z ]{5,}"></label>
+              <label class="top">Phone Number*<input type="tel" name="name" required></label>
+              <label class="top">Email*<input type="email" name="name" required placeholder="guest@sra.com"></label>          
             </fieldset>
             <fieldset>
-              <legend>Choose your Adventure</legend>
-              <label class="side"><input type="radio" name="adventure" value="1">River Drift</label>
-              <label class="side"><input type="radio" name="adventure" value="2">Rapid Rafting</label>
-              <label class="side"><input type="radio" name="adventure" value="3">Kayaking Kraze</label>          
+              <legend>Choose your Adventure*</legend>
+              <label class="side" for="adventure1"><input type="radio" id="adventure1" name="adventure" value="1" required><span>River Drift</span></label>
+              <label class="side" for="adventure2"><input type="radio" id="adventure2" name="adventure" value="2" required><span>Rapid Rafting</span></label>
+              <label class="side" for="adventure3"><input type="radio" id="adventure3" name="adventure" value="3" required><span>Kayaking Kraze</span></label>          
             </fieldset>
             <fieldset>
               <legend>Reservation Info</legend>
-              <label class="top">Start Date<input type="date" name="reservationOn"></label>
-              <label class="top">Group Size<input type="number" name="groupSize"></label>
+              <label class="top">Start Date*<input type="date" name="reservationOn" required></label>
+              <label class="top">Group Size*<input type="number" name="groupSize" required min=1 max=50></label>
             </fieldset>            
             <fieldset>
-              <legend>Questions and Comments</legend>
-            
+              <legend>Questions and Comments</legend>            
               <label class="top">How can we help?<textarea name="questions"></textarea></label>          
             </fieldset>
             <button type="submit" name="submit">Request My Adventure</button>

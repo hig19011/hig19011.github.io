@@ -22,12 +22,30 @@ fieldset {
   input {
     display: block;
     margin: 8px 8px;
-    padding: 1em;
+    //padding: 1em;
     border-radius: 7px;
   }
 
   .side input{
     display: inline;
+  }
+
+  label.top input:required,
+  label.top textarea:required  {
+    border: red solid 2px;
+  }
+
+  label.top input:required:valid,
+  label.top textarea:required:valid {
+    border: black solid 2px;
+  }
+
+  label.side input[type="radio"]:required + span {
+    color: red;
+  }
+
+  label.side input[type="radio"]:valid + span  {
+    color: black;
   }
 
   textarea {
