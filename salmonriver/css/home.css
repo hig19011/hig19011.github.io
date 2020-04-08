@@ -113,9 +113,6 @@ main .contactInfo .socialInfo {
     margin: 0 0 12px 12px;
   }
   main .contactInfo {
-    -ms-flex-item-align: flex;
-        -ms-grid-row-align: flex;
-        align-self: flex;
     width: 80%;
     margin: 12px auto;
   }
