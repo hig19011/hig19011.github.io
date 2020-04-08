@@ -111,7 +111,13 @@ main{
     text-align: left;
     width:80%;
     margin: 16px auto;
+
+    img {
+      width: 100%;
+    }
   }
+
+  
 
   .weatherInfo{    
     display: inline-block;    

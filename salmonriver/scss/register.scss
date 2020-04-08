@@ -48,10 +48,48 @@
 }
 
 
-@media only screen and (min-width: 560px) {
-  .adventureInfo {
- 
+fieldset {
+  border-radius: 7px;
+  margin: 16px 0;
+  text-align: left;
+
+  legend {
+    text-align: left;
+    padding: 0 8px;
   }
+
+  label.top {
+    display: inline;
+    margin: 8px 8px;
+  }
+
+  label.side {
+    display: block;
+    margin: 8px 8px;
+  }
+  
+  input {
+    display: block;
+    margin: 8px 8px;
+    padding: 1em;
+    border-radius: 7px;
+  }
+
+  .side input{
+    display: inline;
+  }
+
+  textarea {
+    width: 90%;
+    min-width: 16em;
+    min-height: 5em;
+    border-radius: 7px;
+  }
+
+}
+
+
+@media only screen and (min-width: 560px) { 
   .registerContent{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -64,4 +102,25 @@
     max-width: 960px;
     margin: 0 auto;
   }
+
+  fieldset {
+
+    label.top {
+      margin: 4px 4px;
+    }
+
+    label.side {      
+      margin: 4px 4px;
+    }
+
+    input{
+      padding: 1px 0;
+      border-radius: 0;
+    }
+
+    textarea {
+      border-radius: 0;
+    }
+  }
+
 } 

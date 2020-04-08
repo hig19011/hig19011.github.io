@@ -48,6 +48,45 @@
   max-width: 90%;
 }
 
+fieldset {
+  border-radius: 7px;
+  margin: 16px 0;
+  text-align: left;
+}
+
+fieldset legend {
+  text-align: left;
+  padding: 0 8px;
+}
+
+fieldset label.top {
+  display: inline;
+  margin: 8px 8px;
+}
+
+fieldset label.side {
+  display: block;
+  margin: 8px 8px;
+}
+
+fieldset input {
+  display: block;
+  margin: 8px 8px;
+  padding: 1em;
+  border-radius: 7px;
+}
+
+fieldset .side input {
+  display: inline;
+}
+
+fieldset textarea {
+  width: 90%;
+  min-width: 16em;
+  min-height: 5em;
+  border-radius: 7px;
+}
+
 @media only screen and (min-width: 560px) {
   .registerContent {
     display: -ms-grid;
@@ -61,6 +100,19 @@
   .registerContent {
     max-width: 960px;
     margin: 0 auto;
+  }
+  fieldset label.top {
+    margin: 4px 4px;
+  }
+  fieldset label.side {
+    margin: 4px 4px;
+  }
+  fieldset input {
+    padding: 1px 0;
+    border-radius: 0;
+  }
+  fieldset textarea {
+    border-radius: 0;
   }
 }
 /*# sourceMappingURL=register.css.map */

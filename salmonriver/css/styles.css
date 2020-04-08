@@ -577,6 +577,10 @@ main .companyIntro {
   margin: 16px auto;
 }
 
+main .companyIntro img {
+  width: 100%;
+}
+
 main .weatherInfo {
   display: inline-block;
   margin: 12px auto;
