@@ -1,5 +1,5 @@
 
-const requestURL = 'guides.json';
+const requestURL = 'data/guides.json';
 
 
 fetch(requestURL)

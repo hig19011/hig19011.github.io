@@ -184,9 +184,24 @@ main{
   }
 }
 
+.attribution-info {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
 footer {
  text-align: center;
  margin-top: 3em;
+
+ a{
+   text-decoration: none; 
+   color: black;
+ }
+
+ a:hover, a:active {
+   color: blue;
+ }
 
  hr{
    width: 75%;

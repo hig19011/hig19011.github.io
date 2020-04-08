@@ -648,9 +648,24 @@ main .contactInfo .socialInfo {
   margin: 12px auto;
 }
 
+.attribution-info {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
 footer {
   text-align: center;
   margin-top: 3em;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover, footer a:active {
+  color: blue;
 }
 
 footer hr {
