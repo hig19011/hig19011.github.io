@@ -1,13 +1,31 @@
 .activityInfo {
   padding: 8px;
+  text-align: center;
+  margin: 0 2.5%;
 }
 
 .activityInfo h3 {
   font-size: 24px;
 }
 
+.activityInfo p {
+  text-align: left;
+}
+
 .activityInfo img {
-  float: right;
-  padding: 8px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 32.5em) {
+  .activityInfo img {
+    max-width: 48%;
+    float: right;
+    margin: 0 0 16px 16px;
+  }
+  .activityInfo:nth-child(even) img {
+    float: left;
+    margin: 0 16px 16px 0;
+  }
 }
 /*# sourceMappingURL=activities.css.map */

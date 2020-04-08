@@ -1,19 +1,39 @@
 .activityInfo {
   padding: 8px;
+  text-align: center;
+  margin: 0 2.5%;
+  
   h3{
     font-size: 24px;     
   }
 
-  img{
-    float: right;
-    padding: 8px;
+  p{
+    text-align: left;
+  }
+ 
+  img{       
+    max-width: 100%;   
+    margin: 0 auto;  
   }
 }
 
-@media only screen and (min-width: 560px) {
-  
+@media only screen and (min-width: 32.5em) {
+  .activityInfo {    
+    img{    
+      max-width: 48%;  
+      float: right;  
+      margin: 0 0 16px 16px;      
+    }
+    
+  }
+  .activityInfo:nth-child(even) {
+    img {
+      float: left;
+      margin: 0 16px 16px 0; 
+    }
+  }
 } 
 
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 54em) {
   
 } 

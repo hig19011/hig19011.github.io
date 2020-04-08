@@ -614,7 +614,8 @@ main .weatherInfo .weatherSummary img {
 }
 
 main .locationInfo iframe {
-  max-width: 100%;
+  max-width: 96%;
+  padding: 2%;
 }
 
 main .contactInfo {
@@ -688,7 +689,7 @@ footer .pipeList li {
   display: table;
 }
 
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 32.5em) {
   header .logo {
     display: inline-block;
     width: 105px;
@@ -725,7 +726,7 @@ footer .pipeList li {
 }
 
 /* end of media query */
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 54em) {
   header {
     -ms-flex-wrap: unset;
         flex-wrap: unset;

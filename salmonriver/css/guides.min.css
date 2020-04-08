@@ -1,2 +1,2 @@
-.guideInfo{padding:8px}.guideInfo h3{font-size:24px}.guideInfo img{float:left;padding:8px}
+.guideInfo{padding:8px;text-align:center;margin:0 2.5%}.guideInfo h3{font-size:24px}.guideInfo p{text-align:left}.guideInfo img{max-width:100%}.guideInfo .guide-label{font-weight:700}@media only screen and (min-width: 32.5em){.guideInfo img{max-width:48%;float:right;margin:0 0 16px 16px}.guideInfo:nth-child(even) img{float:left;margin:0 16px 16px 0}}
 /*# sourceMappingURL=guides.min.css.map */

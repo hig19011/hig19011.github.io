@@ -1,0 +1,1 @@
+document.getElementById("copywriteYear").innerHTML = new Date(document.lastModified).getFullYear();
