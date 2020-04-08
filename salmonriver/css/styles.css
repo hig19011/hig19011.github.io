@@ -577,13 +577,9 @@ main .companyIntro {
   margin: 16px auto;
 }
 
-main .companyIntro .pull-right {
-  float: right;
-}
-
 main .companyIntro .sideimage {
-  width: 40%;
-  margin: 0 0 12px 12px;
+  max-width: 100%;
+  margin: 0 0 12px 0;
 }
 
 main .companyIntro img {
@@ -737,6 +733,13 @@ footer .pipeList li {
   }
   main .hero span {
     font-size: 24px;
+  }
+  main .companyIntro .pull-right {
+    float: right;
+  }
+  main .companyIntro .sideimage {
+    width: 50%;
+    margin: 0 0 12px 12px;
   }
   main .contactInfo {
     margin: 12px auto;
