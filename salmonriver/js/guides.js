@@ -35,10 +35,10 @@ fetch(requestURL)
       picture.appendChild(image);
       section.appendChild(picture);      
 
-      addInfo(section,"Certification: ",guide.certlevel)
-      addInfo(section,"Years of Experience: ",guide.yearexp)
-      addInfo(section,"Email: ",guide.email)
-      addInfo(section,"Bio: ",guide.bio)
+      addInfo(section,"Certification:",guide.certlevel)
+      addInfo(section,"Years of Experience:",guide.yearexp)
+      addInfo(section,"Email:",guide.email)
+      addInfo(section,"Bio:",guide.bio)
       for(let j=0; j<guide.preferences.length; j++){
         let preference = guide.preferences[j]
         addInfo(section,preference.label,preference.pref)
@@ -53,7 +53,7 @@ fetch(requestURL)
   function addInfo(parent, label, details){
     let p = document.createElement("p");
     let span = document.createElement("span");
-    span.textContent = label;
+    span.textContent = label + " ";
     span.classList.toggle("guide-label");
     p.appendChild(span);
 
