@@ -577,6 +577,15 @@ main .companyIntro {
   margin: 16px auto;
 }
 
+main .companyIntro .pull-right {
+  float: right;
+}
+
+main .companyIntro .sideimage {
+  width: 40%;
+  margin: 0 0 12px 12px;
+}
+
 main .companyIntro img {
   width: 100%;
 }
@@ -617,23 +626,28 @@ main .weatherInfo .weatherSummary img {
   grid-row-end: 6;
 }
 
-main .locationInfo iframe {
-  max-width: 96%;
-  padding: 2%;
-}
-
 main .contactInfo {
+  width: 100%;
   margin: 12px auto;
   display: inline-block;
-  text-align: left;
+  text-align: center;
 }
 
 main .contactInfo .commInfo {
+  width: 90%;
+  text-align: left;
+  font-size: 16px;
   margin: 12px auto;
 }
 
 main .contactInfo .commInfo span {
   display: block;
+}
+
+main .contactInfo .socialInfo {
+  width: 90%;
+  margin: 12px auto;
+  text-align: left;
 }
 
 footer {
@@ -727,6 +741,12 @@ footer .pipeList li {
   main .contactInfo {
     margin: 12px auto;
   }
+  main .contactInfo .commInfo {
+    width: 65%;
+  }
+  main .contactInfo .socialInfo {
+    width: 65%;
+  }
 }
 
 /* end of media query */
@@ -760,6 +780,12 @@ footer .pipeList li {
   }
   main .hero span {
     font-size: 24px;
+  }
+  main .contactInfo .commInfo {
+    width: 50%;
+  }
+  main .contactInfo .socialInfo {
+    width: 50%;
   }
 }
 

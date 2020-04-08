@@ -41,4 +41,13 @@ main{
   .contactInfo {
     margin: 12px auto;
   }
+
+  .contactInfo {       
+    .commInfo{
+      width: 65%;      
+    }
+    .socialInfo{
+      width: 65%;      
+    }
+  }
 }
