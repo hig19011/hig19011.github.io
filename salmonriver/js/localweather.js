@@ -29,8 +29,7 @@ function updateWeatherSummary(data){
   image.setAttribute('src', imageURL+data.weather[0].icon+"@2x.png");
   image.setAttribute('alt', data.weather[0].description);
 
-  document.getElementById('summaryDescr').textContent = data.weather[0].main;
-  document.getElementById('high-low').textContent = Math.round(data.main.temp_max) + " / " + Math.round(data.main.temp_min)+ " \xB0F";
+  document.getElementById('summaryDescr').textContent = data.weather[0].main;  
   document.getElementById('temp').textContent = Math.round(data.main.temp)  + " \xB0F";    
   document.getElementById('precipitation').textContent = getRainfall(data) + " in";
   document.getElementById('windSpeed').textContent = Math.round(data.wind.speed) + " MPH";
