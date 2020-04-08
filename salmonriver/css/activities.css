@@ -33,14 +33,6 @@
   text-align: left;
 }
 
-.activityInfo .tripSpecs h3 {
-  text-align: center;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
-  font-size: 24px;
-}
-
 .activityInfo .tripSpecs ul {
   padding: 0;
   margin: 0;

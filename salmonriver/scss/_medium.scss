@@ -25,41 +25,7 @@ header {
 }
 
 
-main{ 
-  
+main{   
   max-width: 720px;
-  margin: 0 auto;
-  .hero {  
-    a {
-      bottom: 24px;
-      left: 16px;
-    }
-    span {
-      font-size: 24px;
-    }
-  }  
-
-  .companyIntro {
-    .pull-right {
-      float:right;
-    }
-    
-    .sideimage {
-      width: 50%;
-      margin: 0 0 12px 12px;
-    }
-  }
-
-  .contactInfo {
-    align-self: flex;
-    width:80%;
-    margin: 12px auto;
-         
-    .commInfo{
-      width: 70%;      
-    }
-    .socialInfo{
-      width: 70%;      
-    }
-  }
+  margin: 0 auto;  
 }
