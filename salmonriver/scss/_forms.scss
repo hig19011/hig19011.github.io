@@ -22,7 +22,7 @@ fieldset {
   input {
     display: block;
     margin: 8px 8px;
-    //padding: 1em;
+    padding: 1em;
     border-radius: 7px;
   }
 
@@ -41,7 +41,7 @@ fieldset {
   }
 
   label.side input[type="radio"]:required + span {
-    color: red;
+    color: rgba($color: #AA0000, $alpha: 1.0);
   }
 
   label.side input[type="radio"]:valid + span  {
@@ -75,7 +75,7 @@ fieldset {
     }
 
     input{
-      padding: 1px 0;
+      padding: 4px 0;
       border-radius: 0;
     }
 
